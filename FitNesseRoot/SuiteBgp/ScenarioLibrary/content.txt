@@ -1,0 +1,4 @@
+!*** Scenario - Setup using default values 
+!|scenario                             |setup for test script                             |
+|setup for test script for browser|${defaultBrowser}|locale|${defaultLocale}|version|${defaultVersion}|url|${defaultURL}|
+***!
