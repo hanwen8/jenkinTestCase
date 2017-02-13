@@ -1,0 +1,32 @@
+!*** Go to Records
+!|script|
+| navigate to evalaute application|
+| populate field | The Applicant has at least 30% shareholding | with | True |
+| populate field | * | with | False |
+| populate field | The Applicant have not previously purchased a similar solution | with | False |
+| populate field | The Applicant is an SME | with | False |
+| populate field | The Applicant is not retrospective | with | False |
+| populate field | The location of deployment is reasonable | with | False |
+| populate field | There are no other companies deploying a solution at the same location | with | False |
+| populate field | The Applicant company did not previously deployed a similar solution at the same location | with | False |
+| populate field | The submitted documents (Contracts, Quotations, Product Brochures, etc.) tally with the information submitted in the application | with | False |
+| populate field | Supportable Cost | with | SME |
+| populate field | Note: Solutions should not be leased out, sold, or purchased on behalf of third parties) | with | False |
+| populate field | There is Revenue Gains, Cost Savings or  Productivity Improvements Expected | with | False |
+| populate field | There is no issue with the declarations made by the applicant | with | False |
+| populate field | There is no issue that the approving authority should take note | with | False |
+| populate field | The application is recommended for | with | Rejection |
+| populate field | No. of Units Supported | with | 9 |
+| populate field | Duration Supported month(s) | with | 9 |
+| populate field | Qualifying Monthly Payment (SGD) | with | 9 |
+| populate field | Qualifying One-time Fees (SGD) | with | 9 |
+| populate field | Proposed Grant Amount (SGD) | with | 9 |
+| populate field | LOF Remarks | with | 9 |
+| populate field | Justification for Supportable Costs | with | 9 |
+| populate field | Recommendation Remarks | with | Testing bot |
+| populate field | Reason for rejection | with | Others |
+| populate field | Reason | with | Testing bot |
+| verify button | Save | is present |
+| click on button | Save |
+| click on button | Yes |
+***!

@@ -1,0 +1,33 @@
+!*** Go to Records
+!|script|
+| navigate to evalaute application|
+| populate field | The Applicant has at least 30% shareholding | with | True |
+| populate field | * | with | True |
+| populate field | The Applicant have not previously purchased a similar solution | with | True |
+| populate field | The Applicant is an SME | with | True |
+| populate field | The Applicant is not retrospective | with | True |
+| populate field | The location of deployment is reasonable | with | True |
+| populate field | There are no other companies deploying a solution at the same location | with | True |
+| populate field | The Applicant company did not previously deployed a similar solution at the same location | with | True |
+| populate field | The submitted documents (Contracts, Quotations, Product Brochures, etc.) tally with the information submitted in the application | with | True |
+| populate field | Supportable Cost | with | SME |
+| populate field | Note: Solutions should not be leased out, sold, or purchased on behalf of third parties) | with | True |
+| populate field | There is Revenue Gains, Cost Savings or  Productivity Improvements Expected | with | True |
+| populate field | There is no issue with the declarations made by the applicant | with | True |
+| populate field | There is no issue that the approving authority should take note | with | True |
+| populate field | The application is recommended for | with | Rejection |
+| populate field | No. of Units Supported | with | 8 |
+| populate field | Duration Supported month(s) | with | 8 |
+| populate field | Qualifying Monthly Payment (SGD) | with | 8 |
+| populate field | Qualifying One-time Fees (SGD) | with | 8 |
+| populate field | Proposed Grant Amount (SGD) | with | 8 |
+| populate field | LOF Remarks | with | 8 |
+| populate field | Justification for Supportable Costs | with | 8 |
+| populate field | Recommendation Remarks | with | Testing bot |
+| verify button | Save | is present |
+| verify field | The application is recommended for | contains validation message | At least one question should be evaluated as 'false' to Recommend for Rejection |
+| click on button | Save |
+| click on button | Yes |
+
+
+***!

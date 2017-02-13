@@ -1,0 +1,12 @@
+!*** Initialization
+!| script                              |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
+|setup selenium web driver with browser|CHROME                                             |
+|set appian url to                     |http://appian-dev.gds-gov.tech/suite/tempo/                                  |
+|set appian version to                 |16.3|
+|set appian locale to                  |en_us                                      |
+***!
+
+!*** Login to Tempo
+!| script                                                          |
+|login with role|bgp_admin|
+***!

@@ -1,0 +1,14 @@
+!*** FitNesse Configurations
+!define TEST_SYSTEM {slim}
+!path C:\\FitNesseForAppian\\lib\\**.jar
+***!
+
+!*** WOGPG Test Suite Configurations
+!define companyName {Generic Trading Company Pte Ltd}
+!define companyUen {201005853W}
+!define mraAppId {17013E8S}
+***!
+!contents -R2 -g -p -f -h
+
+
+
