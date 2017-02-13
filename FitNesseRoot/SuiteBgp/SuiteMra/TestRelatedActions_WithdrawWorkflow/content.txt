@@ -1,0 +1,15 @@
+!*** Go to Related Actions - Take Action - Withdraw
+!|script                                                                                                 |
+|MRA take action approval/delete/withdraw| Withdraw|remarks|This is an automation testing for Withdraw Workflow|
+|click on button               |Submit                                                                   |
+|click on button               |Yes                                                                      |
+|click on button               |Close                                                                    |
+***!
+
+!*** Go to Application History
+!|script                                                                                         |
+|click on link|Application History                                                               |
+|verify grid  ||column|User   |row|3|contains|${mraPoName}                                       |
+|verify grid  ||column|Action |row|3|contains|Withdrawn By Agency                                |
+|verify grid  ||column|Remarks|row|3|contains|This is an automation testing for Withdraw Workflow|
+***!

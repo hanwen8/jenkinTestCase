@@ -1,0 +1,25 @@
+!*** Go to Related Actions - Take Action - Approval
+!|script                                                                                                     |
+|click on menu                 |Records                                                                      |
+|click on record type          |Market Readiness Assistance                                                  |
+|click on record               |ID: ${mraAppId} !-|-! ${companyName} !-|-! UEN: ${companyUen}                |
+|click on link                 |Related Actions                                                              |
+|click on record related action|Take Action                                                                  |
+|populate field                |Choose an Action|with    |Update Approval                                    |
+|populate field                |Remarks         |with    |This is an automation testing for Approval Workflow|
+|populate field                |Upload Files    |with    |${automated.testing.home}/documents/CMD.png        |
+|verify field                  |Upload Files    |contains|${automated.testing.home}/documents/CMD.png        |
+|populate field                |Approved Amount |with    |177.12                                             |
+|click on button               |Submit                                                                       |
+|click on button               |Yes                                                                          |
+|click on button               |Close                                                                        |
+|wait for                      |+5 seconds                                                                   |
+***!
+
+!*** Go to Application History
+!|script                                                                                         			 |
+|click on link|Application History                                                               			 |
+|verify grid  ||column|User   |row|3|contains|${mraPoName}                                       			 |
+|verify grid  ||column|Action |row|3|contains|Approved By Agency                                 			 |
+|verify grid  ||column|Remarks|row|3|contains|This is an automation testing for Approval Workflow			 |
+***!

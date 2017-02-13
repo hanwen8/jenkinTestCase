@@ -1,0 +1,20 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                  |
+|login with role|bgp_admin|
+|click on menu  |Actions  |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                    |
+|verify Reassign Ownership action is present|
+***!
+
+!*** Reassign Ownership to Another Processing Officer
+!|script                                                                     |
+|Reassign Ownership from User|ramkyp|named|Ramakrishna Paturu|to User|MRA PO1|
+***!
+
+!*** Tear Down
+|script|
+|logout|
+***!

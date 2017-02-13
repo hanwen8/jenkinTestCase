@@ -1,0 +1,80 @@
+!*** Go to Tasks
+!|script                                                                  |
+|click on menu|Tasks                                                      |
+|verify task  |Assign Owner for New Application ID #${mraAppId}|is present|
+***!
+
+!*** Go to My Current Grants
+!|script                                                                                                      |
+|click on task report|My Current Grants                                                                       |
+|populate field      |Search by keyword :                      |with  |${mraAppId}                            |
+|verify grid         |Grants currently assigned to ${mraPoName}|column|[1]|row|[1]|contains|No items available|
+***!
+
+!*** Go to Unassigned Grants
+!|script                                                                                                                                                           |
+|click on task report|Unassigned Grants                                                                                                                            |
+|populate field      |Search by keyword :                             |with        |${mraAppId}                                                                    |
+|verify grid         |All Tasks for Processing Officers               |column      |Task Name    |row|[1]|contains|Assign Owner for New Application ID #${mraAppId}|
+|verify link         |Assign Owner for New Application ID #${mraAppId}|is present                                                                                  |
+|verify link         |Assign Owner for New Application ID #${mraAppId}|URL contains|tempo/tasks/task                                                               |
+|verify grid         |All Tasks for Processing Officers               |column      |Company      |row|[1]|contains|${companyName} (${companyUen})                  |
+|verify grid         |All Tasks for Processing Officers               |column      |Specific Area|row|[1]|contains|Market Readiness Assistance                     |
+***!
+
+!*** Go to Task Ownership Assignment
+!|script                                                                                                 |
+|click on link  |Assign Owner for New Application ID #${mraAppId}                                        |
+|verify button  |Accept                                |is present                                       |
+|verify button  |Go Back                               |is present                                       |
+|click on button|Accept                                                                                  |
+|populate field |Search MRA Processing Officer(s)      |with  |${mraPoName}                              |
+|verify grid    |Grants Load per MRA Processing Officer|column|Officer Name|row|[1]|contains|${mraPoName}|
+|select grid    |Grants Load per MRA Processing Officer|row   |[1]                                       |
+|click on button|Assign                                                                                  |
+|click on button|Yes                                                                                     |
+***!
+
+!*** Go to My Current Grants
+!|script                                                                                                                |
+|wait for            |+10 seconds                                                                                       |
+|click on task report|My Current Grants                                                                                 |
+|populate field      |Search by keyword :                      |with        |${mraAppId}                                |
+|verify grid         |Grants currently assigned to ${mraPoName}|column      |Application ID|row|[1]|contains|${mraAppId}|
+|verify link         |${mraAppId}                              |is present                                              |
+|verify link         |${mraAppId}                              |URL contains|tempo/records/item                         |
+|verify grid         |Grants currently assigned to ${mraPoName}|column      |Status        |row|[1]|contains|Processing |
+***!
+
+!*** Go to Related Actions
+!|script                                                           |
+|click on link                 |${mraAppId}                        |
+|click on link                 |Related Actions                    |
+|verify record related action  |Reassign Ownership      |is present|
+|verify record related action  |Take Action             |is present|
+|verify record related action  |Generate Letter of Offer|is present|
+|click on record related action|Reassign Ownership                 |
+|click on button               |Cancel                             |
+|click on button               |Yes                                |
+|click on record related action|Take Action                        |
+|click on button               |Cancel                             |
+|click on button               |Yes                                |
+|click on record related action|Generate Letter of Offer           |
+|click on button               |Close                              |
+***!
+
+!*** Go to Application History
+!|script                                                                                 |
+|click on link|Application History                                                       |
+|verify grid  ||column|User   |row|1|contains|${mraPoName}                               |
+|verify grid  ||column|Action |row|1|contains|Assign Application                         |
+|verify grid  ||column|Remarks|row|1|contains|Ownership has been assigned to ${mraPoName}|
+***!
+
+!*** Go to News
+!|script                                                                                                                                                                                                                                                                                                       |
+|click on menu                   |News                                                                                                                                                                                                                                                                         |
+|click on link                   |Updates                                                                                                                                                                                                                                                                      |
+|$submissionTime=                |get regex                                                            |[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M|group                                                   |0|from news feed containing text|New Application ID #${mraAppId} has been submitted on|
+|verify news feed containing text|New Application ID #${mraAppId} has been submitted on $submissionTime|commented with                                         |[Processing] Ownership has been assigned to ${mraPoName}|is present                                                                            |
+***!

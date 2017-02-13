@@ -1,0 +1,62 @@
+!*** Verify whether the report is present or not and search by filters
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Search                                            |
+***!
+
+!*** Verify whether the report is present or not and search by Application type
+!|script                                             |
+|click on menu  |Reports                             |
+|verify report  |Search Business Grants|is present   |
+|click on report|Search Business Grants              |
+|populate field |Application type      |with|Rerouted|
+|click on button|Search                              |
+***!
+
+
+!*** Reset values for Reset Button
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Reset                                             |
+***!
+
+!*** Verify whether the report is present or not and search by Date of submission
+!|script                                                     |
+|click on menu  |Reports                                     |
+|verify report  |Search Business Grants|is present           |
+|click on report|Search Business Grants                      |
+|populate field |Application type      |with      |Rerouted  |
+|populate field |From                  |with value|2016-04-07|
+|populate field |To                    |with value|2017-06-08|
+|click on button|Search                                      |
+***!
+
+!*** Pagination Test
+!|script                                                                 |
+|click on menu  |Reports                                                 |
+|verify report  |Search Business Grants|is present                       |
+|click on report|Search Business Grants                                  |
+|populate field |Agency Name           |with      |SPRING                |
+|populate field |Grant Type            |with      |Capability Development|
+|click on button|Search                                                  |
+|click on grid  |                      |navigation|last                  |
+***!
+
+!*** Select paging as 200 from the top of the grid
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Search                                            |
+|click on link  |200                                               |
+***!

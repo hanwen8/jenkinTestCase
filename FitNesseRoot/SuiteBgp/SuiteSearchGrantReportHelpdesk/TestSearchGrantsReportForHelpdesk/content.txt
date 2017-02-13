@@ -1,0 +1,18 @@
+!*** Verify whether the report is present or not and search by filters
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Search                                            |
+***!
+
+!*** Verify whether the report is present or not and search by Application type
+!|script                                             |
+|click on menu  |Reports                             |
+|verify report  |Search Business Grants|is present   |
+|click on report|Search Business Grants              |
+|populate field |Application type      |with|Rerouted|
+|click on button|Search                              |
+***!

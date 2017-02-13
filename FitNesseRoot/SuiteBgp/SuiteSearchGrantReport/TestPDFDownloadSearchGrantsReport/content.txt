@@ -1,0 +1,45 @@
+!*** Define Variables
+!define cdgAppId {1609Q6Q3}
+***!
+
+!*** Open Grant Summary dashboard on clicking application ID
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Search                                            |
+|click on link  |${cdgAppId}                                       |
+***!
+
+
+!*** Open Grant Summary dashboard on clicking application ID and verifying PDF link
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Search                                            |
+|click on link  |${cdgAppId}                                       |
+|verify link    |Download as PDF       |is present                 |
+|click on link  |Download as PDF                                   |
+***!
+
+
+!*** Open Grant Summary dashboard on clicking application ID and go back
+!|script                                                           |
+|click on menu  |Reports                                           |
+|verify report  |Search Business Grants|is present                 |
+|click on report|Search Business Grants                            |
+|populate field |Agency Name           |with|SPRING                |
+|populate field |Grant Type            |with|Capability Development|
+|click on button|Search                                            |
+|click on link  |${cdgAppId}                                       |
+|verify link    |Download as PDF       |is present                 |
+|click on link  |Go back                                           |
+***!
+
+
+

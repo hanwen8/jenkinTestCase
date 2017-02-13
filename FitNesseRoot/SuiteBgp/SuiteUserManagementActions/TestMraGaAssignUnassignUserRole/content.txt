@@ -1,0 +1,30 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                   |
+|login with role|bgp_mra_ga|
+|click on menu  |Actions   |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                               |
+|verify Assign or Un-Assign User Role action is present|
+***!
+
+!*** Un-Assign PO from MRA PO Role
+!|script                                                                                        |
+|Un-Assign PO|mrapo1@iesingapore.gov.sg|named|MRA PO1|from role|BGP MRA Grant Processing Officer|
+***!
+
+!*** Assign PO to MRA PO Role
+!|script                                                                                     |
+|Assign PO|mrapo1@iesingapore.gov.sg|named|MRA PO1|with role|BGP MRA Grant Processing Officer|
+***!
+
+!*** Date Validations for Assign or Un-Assign MRA PO Role
+!|script                                                                                                   |
+|Date Validations for PO|mrapo1@iesingapore.gov.sg|named|MRA PO1|with role|BGP MRA Grant Processing Officer|
+***!
+
+!*** Tear Down
+|script|
+|logout|
+***!

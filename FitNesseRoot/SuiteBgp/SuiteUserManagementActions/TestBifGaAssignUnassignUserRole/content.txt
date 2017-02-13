@@ -1,0 +1,30 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                    |
+|login with role|bgp_bif2_ga|
+|click on menu  |Actions    |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                               |
+|verify Assign or Un-Assign User Role action is present|
+***!
+
+!*** Un-Assign PO from BIF2 PO Role
+!|script                                                                                               |
+|Un-Assign PO|bifpo@stb.gov.sg|named|BIF Processing Officer|from role|BGP BIF2 Grant Processing Officer|
+***!
+
+!*** Assign PO to BIF2 PO Role
+!|script                                                                                            |
+|Assign PO|bifpo@stb.gov.sg|named|BIF Processing Officer|with role|BGP BIF2 Grant Processing Officer|
+***!
+
+!*** Date Validations for Assign or Un-Assign BIF2 PO Role
+!|script                                                                                                          |
+|Date Validations for PO|bifpo@stb.gov.sg|named|BIF Processing Officer|with role|BGP BIF2 Grant Processing Officer|
+***!
+
+!*** Tear Down
+|script|
+|logout|
+***!

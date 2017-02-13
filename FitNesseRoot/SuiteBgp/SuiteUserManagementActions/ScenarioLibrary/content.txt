@@ -1,0 +1,94 @@
+!**> Verify whether Assign or Un-Assign User Role action is present or not
+|scenario                   |verify Assign or Un-Assign User Role action is present                       |
+|click on application filter|Business Grant Portal                                                        |
+|verify action              |Assign or Un-Assign User Role|is present                                     |
+|click on action            |Assign or Un-Assign User Role                                                |
+|check                      |get form title               |Assign or Un-Assign User Role                  |
+|check                      |get form instructions        |Select a user role to assign or un-assign users|
+|verify field               |User Role                    |is present                                     |
+|verify field               |Action                       |is present                                     |
+|click on button            |Cancel                                                                       |
+***!
+
+!**> Verify whether Reassign Ownership action is present or not
+|scenario                   |verify Reassign Ownership action is present                                                 |
+|click on application filter|Business Grant Portal                                                                       |
+|verify action              |Reassign Ownership       |is present                                                        |
+|click on action            |Reassign Ownership                                                                          |
+|check                      |get form title           |Reassign Ownership                                                |
+|check                      |get form instructions    |Please select a processing officer to reassign ownership as a bulk|
+|verify field               |Search Processing Officer|is present                                                        |
+|click on button            |Cancel                                                                                      |
+***!
+
+!3 Assign or Un-Assign Scenarios for Processing Officer Roles
+
+!**> Un-Assign PO from Paticular PO Role
+|scenario                   |Un-Assign PO  |username  |named   |name|from role|role              |
+|click on application filter|Business Grant Portal                                               |
+|click on action            |Assign or Un-Assign User Role                                       |
+|verify field               |User Role :   |contains  |@role                                     |
+|verify field               |Action        |is present                                           |
+|click on radio option      |Un-Assign Role                                                      |
+|verify field               |Search Users  |is present                                           |
+|populate field             |Search Users  |with value|@name                                     |
+|verify grid                |              |column    |Username|row |1        |contains|@username|
+|select grid                |              |row       |1                                         |
+|click on button            |Un-Assign                                                           |
+|click on button            |Yes                                                                 |
+|check                      |get form title|Unassign User Role Confirmation                      |
+|verify field               |Action On     |contains  |!today (dd MMM yyyy)                      |
+|click on button            |Close                                                               |
+***!
+
+!**> Assign PO to Paticular PO Role
+|scenario                   |Assign PO     |username  |named   |name|with role|role              |
+|click on application filter|Business Grant Portal                                               |
+|click on action            |Assign or Un-Assign User Role                                       |
+|verify field               |User Role :   |contains  |@role                                     |
+|verify field               |Action        |is present                                           |
+|click on radio option      |Assign Role                                                         |
+|verify field               |Search Users  |is present                                           |
+|populate field             |Search Users  |with value|@name                                     |
+|verify grid                |              |column    |Username|row |1        |contains|@username|
+|select grid                |              |row       |1                                         |
+|click on button            |Assign                                                              |
+|click on button            |Yes                                                                 |
+|check                      |get form title|Assign User Role Confirmation                        |
+|verify field               |Action On     |contains  |!today (dd MMM yyyy)                      |
+|click on button            |Close                                                               |
+***!
+
+!**> Date Validations for Assign or Un-Assign PO Role
+|scenario                   |Date Validations for PO      |username                   |named    |name |with role|role              |
+|click on application filter|Business Grant Portal                                                                                 |
+|verify action              |Assign or Un-Assign User Role|is present                                                              |
+|click on action            |Assign or Un-Assign User Role                                                                         |
+|verify field               |User Role :                  |contains                   |@role                                       |
+|verify field               |Action                       |is present                                                              |
+|click on radio option      |Assign Role                                                                                           |
+|verify field               |Search Users                 |is present                                                              |
+|populate field             |Search Users                 |with value                 |@name                                       |
+|populate field             |Search Users                 |with value                 |@name                                       |
+|verify field               |Search Users                 |contains validation message|Please do not enter duplicate usernames     |
+|verify grid                |                             |column                     |Username |row  |1        |contains|@username|
+|select grid                |                             |row                        |1                                           |
+|verify field               |                             |contains validation message|One or more user already has the access role|
+|click on button            |Cancel                                                                                                |
+***!
+
+!3 Reassign Ownership Scenarios for Processing Officer Roles
+
+!**> Reassign Ownership to Another Processing Officer
+|scenario                   |Reassign Ownership from User   |fromUser  |named     |name|to User|toUser            |
+|click on application filter|Business Grant Portal                                                                |
+|click on action            |Reassign Ownership                                                                   |
+|verify field               |Search Processing Officer      |is present                                           |
+|populate field             |Search Processing Officer      |with value|@name                                     |
+|verify grid                |                               |column    |Task Owner|row |1      |contains|@fromUser|
+|select grid                |                               |row       |1                                         |
+|verify field               |List of all Processing Officers|is present                                           |
+|populate field             |List of all Processing Officers|with value|@toUser                                   |
+|click on button            |Reassign                                                                             |
+|click on button            |Yes                                                                                  |
+***!

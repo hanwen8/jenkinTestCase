@@ -1,0 +1,47 @@
+!*** Go to Records
+!|script                                                         |
+|click on menu                 |Records                          |
+|click on record type          |Building Information Model       |
+|verify record type user filter|Me                    |is present|
+|verify record type user filter|Anyone In Organization|is present|
+|verify record type user filter|Unassigned            |is present|
+|verify record type user filter|New                   |is present|
+|verify record type user filter|Rerouted              |is present|
+|verify record type user filter|Submitted             |is present|
+|verify record type user filter|Processing            |is present|
+|verify record type user filter|Pending Re-submission |is present|
+|verify record type user filter|1 Month               |is present|
+|verify record type user filter|3 Months              |is present|
+|verify record type user filter|6 Months              |is present|
+|search for                    |${bimAppId}                      |
+|verify record                 |ID: ${bimAppId}       |is present|
+***!
+
+!*** Go to Record Summary Dashboard
+!|script                                                                                                                                                                |
+|click on record|ID: ${bimAppId}                                                                                                                                        |
+|verify link    |Download as PDF                                                                                         |is present                                    |
+|verify link    |Download as PDF                                                                                         |URL contains|suite/plugins/servlet/downloadpdf|
+|click on button|Eligibility                                                                                                                                            |
+|verify field   |Is the applicant registered in Singapore?                                                               |is present                                    |
+|verify field   |Is the applicant's main or secondary business activity in Building & Construction?                      |is present                                    |
+|verify field   |Is the applicant involved in an on-going or upcoming local construction project with aleast 5000sqm GFA?|is present                                    |
+|verify field   |Are the following statements true for this project?                                                     |is present                                    |
+
+***!
+
+!*** Go to Related Actions
+!|script                                                             |
+|click on link               |Related Actions                        |
+|verify record related action|Reassign Ownership      |is not present|
+|verify record related action|Take Action             |is not present|
+|verify record related action|Generate Letter of Offer|is not present|
+***!
+
+!*** Go to Application History
+!|script                                                                |
+|click on link|Application History                                      |
+|verify grid  ||column|User   |row|1|contains|S1234567D                 |
+|verify grid  ||column|Action |row|1|contains|New                       |
+|verify grid  ||column|Remarks|row|1|contains|Received grant application|
+***!

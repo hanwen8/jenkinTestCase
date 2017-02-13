@@ -1,0 +1,3488 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>SuiteBgp.SuiteMra.TestRelatedActions_ApprovalWorkflow</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-02-06T17:22:32+08:00</date>
+    <runTimeInMillis>9301</runTimeInMillis>
+    <content></content>
+    <relativePageName>SuiteSetUp</relativePageName>
+        <tags>mra</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0', instruction='make', instanceName='scriptTableActor', className='com.appiancorp.ps.automatedtest.fixture.TempoFixture', args=[]}</instruction>
+        <slimResult>pass(com.appiancorp.ps.automatedtest.fixture.TempoFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_11_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>com.appiancorp.ps.automatedtest.fixture.TempoFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_1', instruction='call', instanceName='scriptTableActor', methodName='setupSeleniumWebDriverWithBrowser', args=[CHROME]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_2', instruction='call', instanceName='scriptTableActor', methodName='setAppianUrlTo', args=[http://appian-dev.gds-gov.tech/suite/tempo/]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_3', instruction='call', instanceName='scriptTableActor', methodName='setAppianVersionTo', args=[16.3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_4', instruction='call', instanceName='scriptTableActor', methodName='setAppianLocaleTo', args=[en_us]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_5', instruction='call', instanceName='scriptTableActor', methodName='setStopOnErrorTo', args=[true]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_6', instruction='call', instanceName='scriptTableActor', methodName='setTimeoutSecondsTo', args=[20]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_0', instruction='call', instanceName='scriptTableActor', methodName='loginWithRole', args=[bgp_mra_po]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_12_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2017-02-06T17:22:42+08:00</date>
+    <runTimeInMillis>13621</runTimeInMillis>
+    <content></content>
+    <relativePageName>TestRelatedActions_ApprovalWorkflow</relativePageName>
+        <tags>mra, relatedActions, approve</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='clickOnMenu', args=[Records]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='clickOnRecordType', args=[Market Readiness Assistance]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='clickOnRecord', args=[ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_3', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[Related Actions]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_4', instruction='call', instanceName='scriptTableActor', methodName='clickOnRecordRelatedAction', args=[Take Action]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_5', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[Choose an Action, Update Approval]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0/scriptTable_9_6', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[Remarks, This is an automation testing for Approval Workflow]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_11_0/scriptTable_9_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_1/scriptTable_10_0', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[Upload Files, C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_11_1/scriptTable_10_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>An error has occurred: Populate Field - Upload Files - C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_1/scriptTable_10_1', instruction='call', instanceName='scriptTableActor', methodName='verifyFieldContains', args=[Upload Files, C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_1/scriptTable_10_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_2', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[Approved Amount, 177.12]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_3', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[Submit]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_4', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[Yes]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_5', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[Close]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_6', instruction='call', instanceName='scriptTableActor', methodName='waitFor', args=[+5 seconds]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_0', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[Application History]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_12_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_1', instruction='call', instanceName='scriptTableActor', methodName='verifyGridColumnRowContains', args=[, User, 3, mra po5]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_12_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_2', instruction='call', instanceName='scriptTableActor', methodName='verifyGridColumnRowContains', args=[, Action, 3, Approved By Agency]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_12_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_3', instruction='call', instanceName='scriptTableActor', methodName='verifyGridColumnRowContains', args=[, Remarks, 3, This is an automation testing for Approval Workflow]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_12_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2017-02-06T17:22:55+08:00</date>
+    <runTimeInMillis>46</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="SuiteBgp.ScenarioLibrary"&gt;.SuiteBgp.ScenarioLibrary&lt;/a&gt; &lt;a href="SuiteBgp.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h3&gt;Workflows for Related Actions&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Update Approval&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Update Rejection&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Withdraw&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Re-route&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Remarks cannot be left blank or more than 4000 characters and dropdown selections cannot be empty&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;re-route with invalid remarks and dropdown selections for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;Remarks cannot be left blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;CHARLOTTE, N.C. Republican presidential nominee Donald Trump apologised on Thursday Aug 18 for past remarks that may have caused personal pain as he sought to refocus his message in the face of falling opinion poll numbers in his first speech since shaking up his campaign team this week. Sometimes, in the heat of debate and speaking on a multitude of issues, you o choose the right words or you say the wrong thing, Trump told a crowd in Charlotte, North Carolina. I have done that, and I regret it, particularly where it may have caused personal pain. Too much is at stake for us to be consumed with these issues Trump did not cite any examples of such remarks. The New York businessman has made his tough talkand brash style a selling point of his campaign for the Nov. 8 election, rarely apologising in the face of criticism even from within his own party for own party for comments insulting women, Muslims and Mexican immigrants. In his presidential announcement speech last year, he described some Mexican immigrants as criminals and rapists.He recently faced a barrage of criticism for belittling the family of a Muslim American soldier who died in Iraq in 2004, after the soldier's father spoke out against Trump at the Democratic National Convention last month. The campaign for his Democratic rival, Hillary Clinton, quickly dismissed Trump apology, saying Donald Trump literally started his campaign by insulting people. We learned tonight that his speechwriter and teleprompter knows he has much for which he should apologise,the campaign said in a statement. But that apology tonight is simply a well-written phrase until he tells us which of his many offensive, bullying and divisive comments he regrets and changes his tune altogether. Trailing Clinton in national opinion polls, Trump has tried to reset his campaign, announcing on Wednesday a shakeup of his senior campaign staff for the second time in less than two months. In the past week, he has abandoned his freewheeling style of campaigning, instead using a teleprompter at every rally. Trump also began adding nonrally events to his campaign schedule, visiting a police lodge on Thursday afternoon and hosting a roundtable on Wednesday morning. Previously, Trump had eschewed such events that historically comprise a significant portion of a candidate's time. Trump's speech on Thursday night, echoing remarks earlier in the week in Wisconsin, reached out to minority voters and accused Clinton of being dishonest. So while sometimes I can be too honest, Hillary Clinton is the exact opposite She never tells the truth,Trump said. In this journey, I will never lie to you. I will never tell you something I do not believe. AUTHENTICITY Trump's new campaign manager, Kellyanne Conway, promised on Thursday he would stick to a more disciplined and uplifting message to voters in the final dash to Election Day without crimping his freewheeling style. Conway said the candidates White House bid could preserve his and still move past a long string of controversies to focus on issues. e would like to take an uplifting, optimistic, policcentric message directly to the American people, Conway told CBS adding she was confident the former reality television star could stick to a sharper message. Wednesdays campaign reshuffle also brought on Steve Bannon, a combative conservative who headed the Breitbart News website, as chief executive officer, in a move seen as giving Trump a chance to emphasise his unconventional style. Conway said the more disciplined approach by Trump, who has never held elective office, would not mean jettisoning his more offhecuff and unpredictable style. going to make sure Donald Trump is comfortable about being in his own skin that he doesn lose that authenticity that you simply cant buy and a pollster cant give youshe said on CNN Trump has so far been unable to extend his appeal beyond white middleclass voters who pack his rallies. Conway said her rise to campaign managh campaign for his&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;You have exceeded the number of characters (4000)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Cancel&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Re-route with valid remarks field and dropdown selections&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;re-route for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;This is an automation testing for re-route workflow&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Capability Development&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Building &amp;amp; Construction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;IT Software&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Building Information Model (BIM)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Confirmation of Re-route for Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful re-route appears in Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;check successful re-route in Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;sort grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;by column&lt;/td&gt;
+		&lt;td colspan="5"&gt;Action Taken On&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Site Admin&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action Taken On&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;06 Feb 2017&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Application has been rerouted to another grant.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Grant Type: Capability Development&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Business Industry: Building &amp;amp; Construction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Functional Area: IT Software&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Specific Area: Building Information Model (BIM)&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful re-route appears in News feed&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check successful re-route for application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td colspan="4"&gt;in News feed&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="6"&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="6"&gt;Updates&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$submissionTime=&lt;/td&gt;
+		&lt;td&gt;get regex&lt;/td&gt;
+		&lt;td&gt;[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M&lt;/td&gt;
+		&lt;td&gt;group&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;from news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;verify news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on $submissionTime&lt;/td&gt;
+		&lt;td&gt;commented with&lt;/td&gt;
+		&lt;td&gt;[Rerouted] Application has been rerouted to another grant.&lt;/td&gt;
+		&lt;td colspan="3"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;!*** Return For Edit&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Remarks cannot be left blank or more than 4000 characters&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;return for edit with invalid remarks for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;Remarks cannot be left blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;CHARLOTTE, N.C. Republican presidential nominee Donald Trump apologised on Thursday Aug 18 for past remarks that may have caused personal pain as he sought to refocus his message in the face of falling opinion poll numbers in his first speech since shaking up his campaign team this week. Sometimes, in the heat of debate and speaking on a multitude of issues, you o choose the right words or you say the wrong thing, Trump told a crowd in Charlotte, North Carolina. I have done that, and I regret it, particularly where it may have caused personal pain. Too much is at stake for us to be consumed with these issues Trump did not cite any examples of such remarks. The New York businessman has made his tough talkand brash style a selling point of his campaign for the Nov. 8 election, rarely apologising in the face of criticism even from within his own party for own party for comments insulting women, Muslims and Mexican immigrants. In his presidential announcement speech last year, he described some Mexican immigrants as criminals and rapists.He recently faced a barrage of criticism for belittling the family of a Muslim American soldier who died in Iraq in 2004, after the soldier's father spoke out against Trump at the Democratic National Convention last month. The campaign for his Democratic rival, Hillary Clinton, quickly dismissed Trump apology, saying Donald Trump literally started his campaign by insulting people. We learned tonight that his speechwriter and teleprompter knows he has much for which he should apologise,the campaign said in a statement. But that apology tonight is simply a well-written phrase until he tells us which of his many offensive, bullying and divisive comments he regrets and changes his tune altogether. Trailing Clinton in national opinion polls, Trump has tried to reset his campaign, announcing on Wednesday a shakeup of his senior campaign staff for the second time in less than two months. In the past week, he has abandoned his freewheeling style of campaigning, instead using a teleprompter at every rally. Trump also began adding nonrally events to his campaign schedule, visiting a police lodge on Thursday afternoon and hosting a roundtable on Wednesday morning. Previously, Trump had eschewed such events that historically comprise a significant portion of a candidate's time. Trump's speech on Thursday night, echoing remarks earlier in the week in Wisconsin, reached out to minority voters and accused Clinton of being dishonest. So while sometimes I can be too honest, Hillary Clinton is the exact opposite She never tells the truth,Trump said. In this journey, I will never lie to you. I will never tell you something I do not believe. AUTHENTICITY Trump's new campaign manager, Kellyanne Conway, promised on Thursday he would stick to a more disciplined and uplifting message to voters in the final dash to Election Day without crimping his freewheeling style. Conway said the candidates White House bid could preserve his and still move past a long string of controversies to focus on issues. e would like to take an uplifting, optimistic, policcentric message directly to the American people, Conway told CBS adding she was confident the former reality television star could stick to a sharper message. Wednesdays campaign reshuffle also brought on Steve Bannon, a combative conservative who headed the Breitbart News website, as chief executive officer, in a move seen as giving Trump a chance to emphasise his unconventional style. Conway said the more disciplined approach by Trump, who has never held elective office, would not mean jettisoning his more offhecuff and unpredictable style. going to make sure Donald Trump is comfortable about being in his own skin that he doesn lose that authenticity that you simply cant buy and a pollster cant give youshe said on CNN Trump has so far been unable to extend his appeal beyond white middleclass voters who pack his rallies. Conway said her rise to campaign managh campaign for his&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;You have exceeded the number of characters (4000)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Cancel&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Return For Edit with valid remarks field&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;return for edit for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;This is an automation testing for Return for Edit workflow&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Confirmation of Return for Edit for Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful Return For Edit appears in Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;check successful Return For Edit in Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;sort grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;by column&lt;/td&gt;
+		&lt;td colspan="5"&gt;Action Taken On&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action Taken On&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;06 Feb 2017&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;This is an automation testing for Return for Edit workflow&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful Return For Edit appears in News feed&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check successful Return For Edit for application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td colspan="4"&gt;in News feed&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="6"&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="6"&gt;Updates                                            6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$submissionTime=&lt;/td&gt;
+		&lt;td&gt;get regex&lt;/td&gt;
+		&lt;td&gt;[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M&lt;/td&gt;
+		&lt;td&gt;group&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;from news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;verify news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on $submissionTime&lt;/td&gt;
+		&lt;td&gt;commented with&lt;/td&gt;
+		&lt;td&gt;[Pending Re-submission] The application has been returned for edit by agency&lt;/td&gt;
+		&lt;td colspan="3"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Navigating to Evaluating Application&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="5"&gt;navigate to evalaute application&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="5"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="5"&gt;Whole of Government - Applications&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record type user filter&lt;/td&gt;
+		&lt;td colspan="5"&gt;Me&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;click on grid&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;verify record related action&lt;/td&gt;
+		&lt;td&gt;Evaluate Application&lt;/td&gt;
+		&lt;td colspan="4"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="5"&gt;Evaluate Application&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;!*** MRA Approval/Delete Flow&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Go to Related Actions - Take Action - Approval&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;MRA take action approval/delete/withdraw&lt;/td&gt;
+		&lt;td&gt;action&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="4"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="4"&gt;Market Readiness Assistance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="4"&gt;ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="4"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="4"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;@action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;@remarks&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;File upload&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;MRA File upload&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Initialization&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.appiancorp.ps.automatedtest.fixture.TempoFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;setup selenium web driver with browser&lt;/td&gt;
+		&lt;td&gt;CHROME&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td&gt;http://appian-dev.gds-gov.tech/suite/tempo/&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td&gt;16.3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td&gt;en_us&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set stop on error to&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;set timeout seconds to&lt;/td&gt;
+		&lt;td&gt;20&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Login to Tempo&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;login with role&lt;/td&gt;
+		&lt;td&gt;bgp_mra_po&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="SuiteBgp.ScenarioLibrary"&gt;.SuiteBgp.ScenarioLibrary&lt;/a&gt; &lt;a href="SuiteBgp.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h3&gt;Workflows for Related Actions&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Update Approval&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Update Rejection&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Withdraw&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Re-route&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Remarks cannot be left blank or more than 4000 characters and dropdown selections cannot be empty&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;re-route with invalid remarks and dropdown selections for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;Remarks cannot be left blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;CHARLOTTE, N.C. Republican presidential nominee Donald Trump apologised on Thursday Aug 18 for past remarks that may have caused personal pain as he sought to refocus his message in the face of falling opinion poll numbers in his first speech since shaking up his campaign team this week. Sometimes, in the heat of debate and speaking on a multitude of issues, you o choose the right words or you say the wrong thing, Trump told a crowd in Charlotte, North Carolina. I have done that, and I regret it, particularly where it may have caused personal pain. Too much is at stake for us to be consumed with these issues Trump did not cite any examples of such remarks. The New York businessman has made his tough talkand brash style a selling point of his campaign for the Nov. 8 election, rarely apologising in the face of criticism even from within his own party for own party for comments insulting women, Muslims and Mexican immigrants. In his presidential announcement speech last year, he described some Mexican immigrants as criminals and rapists.He recently faced a barrage of criticism for belittling the family of a Muslim American soldier who died in Iraq in 2004, after the soldier's father spoke out against Trump at the Democratic National Convention last month. The campaign for his Democratic rival, Hillary Clinton, quickly dismissed Trump apology, saying Donald Trump literally started his campaign by insulting people. We learned tonight that his speechwriter and teleprompter knows he has much for which he should apologise,the campaign said in a statement. But that apology tonight is simply a well-written phrase until he tells us which of his many offensive, bullying and divisive comments he regrets and changes his tune altogether. Trailing Clinton in national opinion polls, Trump has tried to reset his campaign, announcing on Wednesday a shakeup of his senior campaign staff for the second time in less than two months. In the past week, he has abandoned his freewheeling style of campaigning, instead using a teleprompter at every rally. Trump also began adding nonrally events to his campaign schedule, visiting a police lodge on Thursday afternoon and hosting a roundtable on Wednesday morning. Previously, Trump had eschewed such events that historically comprise a significant portion of a candidate's time. Trump's speech on Thursday night, echoing remarks earlier in the week in Wisconsin, reached out to minority voters and accused Clinton of being dishonest. So while sometimes I can be too honest, Hillary Clinton is the exact opposite She never tells the truth,Trump said. In this journey, I will never lie to you. I will never tell you something I do not believe. AUTHENTICITY Trump's new campaign manager, Kellyanne Conway, promised on Thursday he would stick to a more disciplined and uplifting message to voters in the final dash to Election Day without crimping his freewheeling style. Conway said the candidates White House bid could preserve his and still move past a long string of controversies to focus on issues. e would like to take an uplifting, optimistic, policcentric message directly to the American people, Conway told CBS adding she was confident the former reality television star could stick to a sharper message. Wednesdays campaign reshuffle also brought on Steve Bannon, a combative conservative who headed the Breitbart News website, as chief executive officer, in a move seen as giving Trump a chance to emphasise his unconventional style. Conway said the more disciplined approach by Trump, who has never held elective office, would not mean jettisoning his more offhecuff and unpredictable style. going to make sure Donald Trump is comfortable about being in his own skin that he doesn lose that authenticity that you simply cant buy and a pollster cant give youshe said on CNN Trump has so far been unable to extend his appeal beyond white middleclass voters who pack his rallies. Conway said her rise to campaign managh campaign for his&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;You have exceeded the number of characters (4000)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Cancel&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Re-route with valid remarks field and dropdown selections&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;re-route for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;This is an automation testing for re-route workflow&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Capability Development&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Building &amp;amp; Construction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;IT Software&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Building Information Model (BIM)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Confirmation of Re-route for Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful re-route appears in Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;check successful re-route in Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;sort grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;by column&lt;/td&gt;
+		&lt;td colspan="5"&gt;Action Taken On&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Site Admin&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action Taken On&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;06 Feb 2017&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Application has been rerouted to another grant.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Grant Type: Capability Development&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Business Industry: Building &amp;amp; Construction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Functional Area: IT Software&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Specific Area: Building Information Model (BIM)&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful re-route appears in News feed&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check successful re-route for application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td colspan="4"&gt;in News feed&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="6"&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="6"&gt;Updates&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$submissionTime=&lt;/td&gt;
+		&lt;td&gt;get regex&lt;/td&gt;
+		&lt;td&gt;[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M&lt;/td&gt;
+		&lt;td&gt;group&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;from news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;verify news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on $submissionTime&lt;/td&gt;
+		&lt;td&gt;commented with&lt;/td&gt;
+		&lt;td&gt;[Rerouted] Application has been rerouted to another grant.&lt;/td&gt;
+		&lt;td colspan="3"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;!*** Return For Edit&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Remarks cannot be left blank or more than 4000 characters&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;return for edit with invalid remarks for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;Remarks cannot be left blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;CHARLOTTE, N.C. Republican presidential nominee Donald Trump apologised on Thursday Aug 18 for past remarks that may have caused personal pain as he sought to refocus his message in the face of falling opinion poll numbers in his first speech since shaking up his campaign team this week. Sometimes, in the heat of debate and speaking on a multitude of issues, you o choose the right words or you say the wrong thing, Trump told a crowd in Charlotte, North Carolina. I have done that, and I regret it, particularly where it may have caused personal pain. Too much is at stake for us to be consumed with these issues Trump did not cite any examples of such remarks. The New York businessman has made his tough talkand brash style a selling point of his campaign for the Nov. 8 election, rarely apologising in the face of criticism even from within his own party for own party for comments insulting women, Muslims and Mexican immigrants. In his presidential announcement speech last year, he described some Mexican immigrants as criminals and rapists.He recently faced a barrage of criticism for belittling the family of a Muslim American soldier who died in Iraq in 2004, after the soldier's father spoke out against Trump at the Democratic National Convention last month. The campaign for his Democratic rival, Hillary Clinton, quickly dismissed Trump apology, saying Donald Trump literally started his campaign by insulting people. We learned tonight that his speechwriter and teleprompter knows he has much for which he should apologise,the campaign said in a statement. But that apology tonight is simply a well-written phrase until he tells us which of his many offensive, bullying and divisive comments he regrets and changes his tune altogether. Trailing Clinton in national opinion polls, Trump has tried to reset his campaign, announcing on Wednesday a shakeup of his senior campaign staff for the second time in less than two months. In the past week, he has abandoned his freewheeling style of campaigning, instead using a teleprompter at every rally. Trump also began adding nonrally events to his campaign schedule, visiting a police lodge on Thursday afternoon and hosting a roundtable on Wednesday morning. Previously, Trump had eschewed such events that historically comprise a significant portion of a candidate's time. Trump's speech on Thursday night, echoing remarks earlier in the week in Wisconsin, reached out to minority voters and accused Clinton of being dishonest. So while sometimes I can be too honest, Hillary Clinton is the exact opposite She never tells the truth,Trump said. In this journey, I will never lie to you. I will never tell you something I do not believe. AUTHENTICITY Trump's new campaign manager, Kellyanne Conway, promised on Thursday he would stick to a more disciplined and uplifting message to voters in the final dash to Election Day without crimping his freewheeling style. Conway said the candidates White House bid could preserve his and still move past a long string of controversies to focus on issues. e would like to take an uplifting, optimistic, policcentric message directly to the American people, Conway told CBS adding she was confident the former reality television star could stick to a sharper message. Wednesdays campaign reshuffle also brought on Steve Bannon, a combative conservative who headed the Breitbart News website, as chief executive officer, in a move seen as giving Trump a chance to emphasise his unconventional style. Conway said the more disciplined approach by Trump, who has never held elective office, would not mean jettisoning his more offhecuff and unpredictable style. going to make sure Donald Trump is comfortable about being in his own skin that he doesn lose that authenticity that you simply cant buy and a pollster cant give youshe said on CNN Trump has so far been unable to extend his appeal beyond white middleclass voters who pack his rallies. Conway said her rise to campaign managh campaign for his&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;You have exceeded the number of characters (4000)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Cancel&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Return For Edit with valid remarks field&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;return for edit for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;This is an automation testing for Return for Edit workflow&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Confirmation of Return for Edit for Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful Return For Edit appears in Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;check successful Return For Edit in Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;sort grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;by column&lt;/td&gt;
+		&lt;td colspan="5"&gt;Action Taken On&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action Taken On&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;06 Feb 2017&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;This is an automation testing for Return for Edit workflow&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful Return For Edit appears in News feed&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check successful Return For Edit for application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td colspan="4"&gt;in News feed&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="6"&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="6"&gt;Updates                                            6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$submissionTime=&lt;/td&gt;
+		&lt;td&gt;get regex&lt;/td&gt;
+		&lt;td&gt;[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M&lt;/td&gt;
+		&lt;td&gt;group&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;from news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;verify news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on $submissionTime&lt;/td&gt;
+		&lt;td&gt;commented with&lt;/td&gt;
+		&lt;td&gt;[Pending Re-submission] The application has been returned for edit by agency&lt;/td&gt;
+		&lt;td colspan="3"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Navigating to Evaluating Application&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="5"&gt;navigate to evalaute application&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="5"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="5"&gt;Whole of Government - Applications&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record type user filter&lt;/td&gt;
+		&lt;td colspan="5"&gt;Me&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;click on grid&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;verify record related action&lt;/td&gt;
+		&lt;td&gt;Evaluate Application&lt;/td&gt;
+		&lt;td colspan="4"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="5"&gt;Evaluate Application&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;!*** MRA Approval/Delete Flow&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Go to Related Actions - Take Action - Approval&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;MRA take action approval/delete/withdraw&lt;/td&gt;
+		&lt;td&gt;action&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="4"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="4"&gt;Market Readiness Assistance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="4"&gt;ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="4"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="4"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;@action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;@remarks&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;File upload&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;MRA File upload&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Go to Related Actions - Take Action - Approval&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="4"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="ignore"&gt;MRA take action approval/delete/withdraw&lt;/td&gt;
+		&lt;td class="ignore"&gt;Update Approval&lt;/td&gt;
+		&lt;td class="ignore"&gt;remarks&lt;/td&gt;
+		&lt;td class="ignore"&gt;This is an automation testing for Approval Workflow&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;MRA take action approval/delete/withdraw&lt;/td&gt;
+		&lt;td&gt;action&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="4"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="4"&gt;Market Readiness Assistance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="4"&gt;ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="4"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="4"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;Update Approval&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;This is an automation testing for Approval Workflow&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;MRA File upload&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;MRA File upload&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field &lt;span class="fail"&gt;An error has occurred: Populate Field - Upload Files - C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Approved Amount&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;177.12&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;wait for &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;+5 seconds&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Go to Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="8"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;mra po5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Approved By Agency&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;This is an automation testing for Approval Workflow&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="SuiteBgp.ScenarioLibrary"&gt;.SuiteBgp.ScenarioLibrary&lt;/a&gt; &lt;a href="SuiteBgp.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h3&gt;Workflows for Related Actions&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Update Approval&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Update Rejection&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Withdraw&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Re-route&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Remarks cannot be left blank or more than 4000 characters and dropdown selections cannot be empty&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;re-route with invalid remarks and dropdown selections for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;Remarks cannot be left blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;A value is required&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;CHARLOTTE, N.C. Republican presidential nominee Donald Trump apologised on Thursday Aug 18 for past remarks that may have caused personal pain as he sought to refocus his message in the face of falling opinion poll numbers in his first speech since shaking up his campaign team this week. Sometimes, in the heat of debate and speaking on a multitude of issues, you o choose the right words or you say the wrong thing, Trump told a crowd in Charlotte, North Carolina. I have done that, and I regret it, particularly where it may have caused personal pain. Too much is at stake for us to be consumed with these issues Trump did not cite any examples of such remarks. The New York businessman has made his tough talkand brash style a selling point of his campaign for the Nov. 8 election, rarely apologising in the face of criticism even from within his own party for own party for comments insulting women, Muslims and Mexican immigrants. In his presidential announcement speech last year, he described some Mexican immigrants as criminals and rapists.He recently faced a barrage of criticism for belittling the family of a Muslim American soldier who died in Iraq in 2004, after the soldier's father spoke out against Trump at the Democratic National Convention last month. The campaign for his Democratic rival, Hillary Clinton, quickly dismissed Trump apology, saying Donald Trump literally started his campaign by insulting people. We learned tonight that his speechwriter and teleprompter knows he has much for which he should apologise,the campaign said in a statement. But that apology tonight is simply a well-written phrase until he tells us which of his many offensive, bullying and divisive comments he regrets and changes his tune altogether. Trailing Clinton in national opinion polls, Trump has tried to reset his campaign, announcing on Wednesday a shakeup of his senior campaign staff for the second time in less than two months. In the past week, he has abandoned his freewheeling style of campaigning, instead using a teleprompter at every rally. Trump also began adding nonrally events to his campaign schedule, visiting a police lodge on Thursday afternoon and hosting a roundtable on Wednesday morning. Previously, Trump had eschewed such events that historically comprise a significant portion of a candidate's time. Trump's speech on Thursday night, echoing remarks earlier in the week in Wisconsin, reached out to minority voters and accused Clinton of being dishonest. So while sometimes I can be too honest, Hillary Clinton is the exact opposite She never tells the truth,Trump said. In this journey, I will never lie to you. I will never tell you something I do not believe. AUTHENTICITY Trump's new campaign manager, Kellyanne Conway, promised on Thursday he would stick to a more disciplined and uplifting message to voters in the final dash to Election Day without crimping his freewheeling style. Conway said the candidates White House bid could preserve his and still move past a long string of controversies to focus on issues. e would like to take an uplifting, optimistic, policcentric message directly to the American people, Conway told CBS adding she was confident the former reality television star could stick to a sharper message. Wednesdays campaign reshuffle also brought on Steve Bannon, a combative conservative who headed the Breitbart News website, as chief executive officer, in a move seen as giving Trump a chance to emphasise his unconventional style. Conway said the more disciplined approach by Trump, who has never held elective office, would not mean jettisoning his more offhecuff and unpredictable style. going to make sure Donald Trump is comfortable about being in his own skin that he doesn lose that authenticity that you simply cant buy and a pollster cant give youshe said on CNN Trump has so far been unable to extend his appeal beyond white middleclass voters who pack his rallies. Conway said her rise to campaign managh campaign for his&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;You have exceeded the number of characters (4000)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Cancel&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Re-route with valid remarks field and dropdown selections&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;re-route for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Grant Type[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Business Industry[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Functional Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Specific Area[1]&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+		&lt;td colspan="5"&gt;-- Please Select--&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;This is an automation testing for re-route workflow&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Grant Type[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Capability Development&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Business Industry[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Building &amp;amp; Construction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Functional Area[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;IT Software&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Specific Area[2]&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td colspan="6"&gt;Building Information Model (BIM)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Confirmation of Re-route for Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful re-route appears in Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;check successful re-route in Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;sort grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;by column&lt;/td&gt;
+		&lt;td colspan="5"&gt;Action Taken On&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Site Admin&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Re-route&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action Taken On&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;06 Feb 2017&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Application has been rerouted to another grant.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Grant Type: Capability Development&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Business Industry: Building &amp;amp; Construction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Functional Area: IT Software&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Specific Area: Building Information Model (BIM)&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful re-route appears in News feed&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check successful re-route for application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td colspan="4"&gt;in News feed&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="6"&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="6"&gt;Updates&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$submissionTime=&lt;/td&gt;
+		&lt;td&gt;get regex&lt;/td&gt;
+		&lt;td&gt;[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M&lt;/td&gt;
+		&lt;td&gt;group&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;from news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;verify news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on $submissionTime&lt;/td&gt;
+		&lt;td&gt;commented with&lt;/td&gt;
+		&lt;td&gt;[Rerouted] Application has been rerouted to another grant.&lt;/td&gt;
+		&lt;td colspan="3"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;!*** Return For Edit&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Remarks cannot be left blank or more than 4000 characters&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;return for edit with invalid remarks for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;Remarks cannot be left blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;CHARLOTTE, N.C. Republican presidential nominee Donald Trump apologised on Thursday Aug 18 for past remarks that may have caused personal pain as he sought to refocus his message in the face of falling opinion poll numbers in his first speech since shaking up his campaign team this week. Sometimes, in the heat of debate and speaking on a multitude of issues, you o choose the right words or you say the wrong thing, Trump told a crowd in Charlotte, North Carolina. I have done that, and I regret it, particularly where it may have caused personal pain. Too much is at stake for us to be consumed with these issues Trump did not cite any examples of such remarks. The New York businessman has made his tough talkand brash style a selling point of his campaign for the Nov. 8 election, rarely apologising in the face of criticism even from within his own party for own party for comments insulting women, Muslims and Mexican immigrants. In his presidential announcement speech last year, he described some Mexican immigrants as criminals and rapists.He recently faced a barrage of criticism for belittling the family of a Muslim American soldier who died in Iraq in 2004, after the soldier's father spoke out against Trump at the Democratic National Convention last month. The campaign for his Democratic rival, Hillary Clinton, quickly dismissed Trump apology, saying Donald Trump literally started his campaign by insulting people. We learned tonight that his speechwriter and teleprompter knows he has much for which he should apologise,the campaign said in a statement. But that apology tonight is simply a well-written phrase until he tells us which of his many offensive, bullying and divisive comments he regrets and changes his tune altogether. Trailing Clinton in national opinion polls, Trump has tried to reset his campaign, announcing on Wednesday a shakeup of his senior campaign staff for the second time in less than two months. In the past week, he has abandoned his freewheeling style of campaigning, instead using a teleprompter at every rally. Trump also began adding nonrally events to his campaign schedule, visiting a police lodge on Thursday afternoon and hosting a roundtable on Wednesday morning. Previously, Trump had eschewed such events that historically comprise a significant portion of a candidate's time. Trump's speech on Thursday night, echoing remarks earlier in the week in Wisconsin, reached out to minority voters and accused Clinton of being dishonest. So while sometimes I can be too honest, Hillary Clinton is the exact opposite She never tells the truth,Trump said. In this journey, I will never lie to you. I will never tell you something I do not believe. AUTHENTICITY Trump's new campaign manager, Kellyanne Conway, promised on Thursday he would stick to a more disciplined and uplifting message to voters in the final dash to Election Day without crimping his freewheeling style. Conway said the candidates White House bid could preserve his and still move past a long string of controversies to focus on issues. e would like to take an uplifting, optimistic, policcentric message directly to the American people, Conway told CBS adding she was confident the former reality television star could stick to a sharper message. Wednesdays campaign reshuffle also brought on Steve Bannon, a combative conservative who headed the Breitbart News website, as chief executive officer, in a move seen as giving Trump a chance to emphasise his unconventional style. Conway said the more disciplined approach by Trump, who has never held elective office, would not mean jettisoning his more offhecuff and unpredictable style. going to make sure Donald Trump is comfortable about being in his own skin that he doesn lose that authenticity that you simply cant buy and a pollster cant give youshe said on CNN Trump has so far been unable to extend his appeal beyond white middleclass voters who pack his rallies. Conway said her rise to campaign managh campaign for his&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;contains validation message&lt;/td&gt;
+		&lt;td colspan="6"&gt;You have exceeded the number of characters (4000)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Cancel&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Return For Edit with valid remarks field&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;return for edit for&lt;/td&gt;
+		&lt;td&gt;recordType&lt;/td&gt;
+		&lt;td&gt;application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td&gt;with company name&lt;/td&gt;
+		&lt;td&gt;companyName&lt;/td&gt;
+		&lt;td&gt;and UEN&lt;/td&gt;
+		&lt;td&gt;companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="8"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="8"&gt;@recordType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;search for&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;verify record&lt;/td&gt;
+		&lt;td&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+		&lt;td colspan="7"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="8"&gt;ID: @appId | @companyName | UEN: @companyUen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="8"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="8"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form instructions&lt;/td&gt;
+		&lt;td colspan="7"&gt;Allows the Grant Admin / Processing Officer to take an action on this grant&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="6"&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Take Action on Application ID #@appId | Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with   value&lt;/td&gt;
+		&lt;td colspan="6"&gt;This is an automation testing for Return for Edit workflow&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Submit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Yes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;get form title&lt;/td&gt;
+		&lt;td colspan="7"&gt;Confirmation of Return for Edit for Application ID #@appId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="8"&gt;Close&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful Return For Edit appears in Application History&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;check successful Return For Edit in Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="7"&gt;Application History&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;sort grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;by column&lt;/td&gt;
+		&lt;td colspan="5"&gt;Action Taken On&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Return For Edit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Action Taken On&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;06 Feb 2017&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[3]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;This is an automation testing for Return for Edit workflow&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Successful Return For Edit appears in News feed&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check successful Return For Edit for application&lt;/td&gt;
+		&lt;td&gt;appId&lt;/td&gt;
+		&lt;td colspan="4"&gt;in News feed&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="6"&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="6"&gt;Updates                                            6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$submissionTime=&lt;/td&gt;
+		&lt;td&gt;get regex&lt;/td&gt;
+		&lt;td&gt;[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M&lt;/td&gt;
+		&lt;td&gt;group&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;from news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;verify news feed containing text&lt;/td&gt;
+		&lt;td&gt;New Application ID #@appId has been submitted on $submissionTime&lt;/td&gt;
+		&lt;td&gt;commented with&lt;/td&gt;
+		&lt;td&gt;[Pending Re-submission] The application has been returned for edit by agency&lt;/td&gt;
+		&lt;td colspan="3"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Navigating to Evaluating Application&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="5"&gt;navigate to evalaute application&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="5"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="5"&gt;Whole of Government - Applications&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record type user filter&lt;/td&gt;
+		&lt;td colspan="5"&gt;Me&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;click on grid&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;verify record related action&lt;/td&gt;
+		&lt;td&gt;Evaluate Application&lt;/td&gt;
+		&lt;td colspan="4"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="5"&gt;Evaluate Application&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;!*** MRA Approval/Delete Flow&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Go to Related Actions - Take Action - Approval&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;MRA take action approval/delete/withdraw&lt;/td&gt;
+		&lt;td&gt;action&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+		&lt;td&gt;remarks&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="4"&gt;Records&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;click on record type&lt;/td&gt;
+		&lt;td colspan="4"&gt;Market Readiness Assistance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;click on record&lt;/td&gt;
+		&lt;td colspan="4"&gt;ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="4"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on record related action&lt;/td&gt;
+		&lt;td colspan="4"&gt;Take Action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Choose an Action&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;@action&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Remarks&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="2"&gt;@remarks&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;File upload&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;MRA File upload&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Upload Files&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Tear Down&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;logout &lt;span class="fail"&gt;An error has occurred: Logout link&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;tear down &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>SuiteTearDown</relativePageName>
+        <tags>mra</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0', instruction='call', instanceName='scriptTableActor', methodName='logout', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_11_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>An error has occurred: Logout link</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_1', instruction='call', instanceName='scriptTableActor', methodName='tearDown', args=[]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_11_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -Dlog4j.configuration=file:///C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/log4j.properties -cp "C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\fitnesse-20160515-standalone.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\accessors-smart-1.1.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\asm-5.0.3.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\bcpkix-jdk15on-1.48.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\bcprov-jdk15on-1.48.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\cglib-nodep-2.1_3.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\commons-codec-1.10.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\commons-exec-1.3.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\commons-io-2.4.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\commons-lang3-3.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\commons-logging-1.2.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\fitnesse-20160515-standalone.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\gson-2.3.1.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\guava-19.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\httpclient-4.5.1.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\httpcore-4.4.3.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jackson-annotations-2.4.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jackson-core-2.4.1.1.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jackson-databind-2.4.1.3.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\javax.servlet-api-3.1.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jcip-annotations-1.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jcommander-1.48.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jetty-rc-repacked-5.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jetty-repacked-9.2.13.v20150730.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jna-4.1.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\jna-platform-4.1.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\json-path-2.2.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\json-smart-2.2.1.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\log4j-1.2.16.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\mx4j-tools-3.0.1.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\netty-3.5.7.Final.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-api-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-chrome-driver-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-edge-driver-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-firefox-driver-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-ie-driver-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-java-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-leg-rc-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-remote-driver-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-safari-driver-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-server-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\selenium-support-2.53.0.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\slf4j-api-1.7.16.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\snakeyaml-1.8.jar;C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\lib\appian\fitnesse-for-appian-1.4.jar;!path C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/**.jar" fitnesse.slim.SlimService 8090</command>
+    <exitCode>0</exitCode>
+    <stdOut>2017-02-06 17:22:38,653 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.TempoLogin  - LOGIN [mrapo5@iesingapore.gov.sg]
+2017-02-06 17:22:39,436 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.TempoLogin  - WAIT FOR LOGIN
+2017-02-06 17:22:42,111 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.TempoMenu  - WAIT FOR [Records]
+2017-02-06 17:22:42,748 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.TempoMenu  - CLICK [Records]
+2017-02-06 17:22:44,200 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.record.TempoRecordType  - WAIT FOR RECORD TYPE [Market Readiness Assistance]
+2017-02-06 17:22:44,223 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.record.TempoRecordType  - CLICK RECORD TYPE [Market Readiness Assistance]
+2017-02-06 17:22:45,862 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.record.TempoRecord  - WAIT FOR RECORD [ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W]
+2017-02-06 17:22:45,921 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.record.TempoRecord  - CLICK RECORD [ID: 1702RWSF | Generic Trading Company Pte Ltd | UEN: 201005853W]
+2017-02-06 17:22:48,506 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.interfaces.TempoLinkField  - WAIT FOR LINK [Related Actions]
+2017-02-06 17:22:48,528 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.interfaces.TempoLinkField  - CLINK LINK [Related Actions]
+2017-02-06 17:22:49,441 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.record.TempoRecordRelatedAction  - CLICK ON RELATED ACTION [Take Action]
+2017-02-06 17:22:51,081 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.interfaces.TempoDropdownField  - POPULATION [Update Approval]
+2017-02-06 17:22:52,093 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.interfaces.TempoParagraphField  - POPULATION [This is an automation testing for Approval Workflow]
+2017-02-06 17:22:54,052 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFileUploadField  - POPULATION [C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian\documents\CMD.png]
+2017-02-06 17:22:55,696 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder  - Populate Field - Upload Files - C:\gitCloneFitness2\appian-test-scripts\FitNesseForAppian/documents/CMD.png
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your changes will be lost if you leave this page.}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds: null
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CTSSGPLT-474', ip: '192.168.108.33', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\582605\AppData\Local\Temp\scoped_dir8176_25430}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 58904b8a11492d5e4a14c92e3245869c
+*** Element info: {Using=xpath, value=//div[@class = 'appian-indicator-message']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:584)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:580)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.appiancorp.ps.automatedtest.common.AppianObject.waitForWorking(AppianObject.java:201)
+	at com.appiancorp.ps.automatedtest.common.AppianObject.unfocus(AppianObject.java:236)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFileUploadField.populate(TempoFileUploadField.java:79)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:67)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:44)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:793)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+2017-02-06 17:22:55,737 [main] DEBUG com.appiancorp.ps.automatedtest.tempo.TempoLogin  - WAIT FOR LOGIN
+2017-02-06 17:22:55,750 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder  - Logout link
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your changes will be lost if you leave this page.}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds: null
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CTSSGPLT-474', ip: '192.168.108.33', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\582605\AppData\Local\Temp\scoped_dir8176_25430}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 58904b8a11492d5e4a14c92e3245869c
+*** Element info: {Using=xpath, value=//a[contains(text(),'Sign Out')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.appiancorp.ps.automatedtest.tempo.TempoLogin.waitFor(TempoLogin.java:40)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.logout(TempoFixture.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+</stdOut>
+    <stdErr>Feb 06, 2017 5:22:55 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //div[@class = 'appian-indicator-message'])
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your changes will be lost if you leave this page.}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds: null
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CTSSGPLT-474', ip: '192.168.108.33', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\582605\AppData\Local\Temp\scoped_dir8176_25430}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 58904b8a11492d5e4a14c92e3245869c
+*** Element info: {Using=xpath, value=//div[@class = 'appian-indicator-message']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:584)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:580)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.appiancorp.ps.automatedtest.common.AppianObject.waitForWorking(AppianObject.java:201)
+	at com.appiancorp.ps.automatedtest.common.AppianObject.unfocus(AppianObject.java:236)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFileUploadField.populate(TempoFileUploadField.java:79)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:67)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:44)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:793)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+Feb 06, 2017 5:22:55 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //a[contains(text(),'Sign Out')])
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your changes will be lost if you leave this page.}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds: null
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CTSSGPLT-474', ip: '192.168.108.33', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\582605\AppData\Local\Temp\scoped_dir8176_25430}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 58904b8a11492d5e4a14c92e3245869c
+*** Element info: {Using=xpath, value=//a[contains(text(),'Sign Out')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.appiancorp.ps.automatedtest.tempo.TempoLogin.waitFor(TempoLogin.java:40)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.logout(TempoFixture.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>2</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>23916</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,17 @@
+!*** Go to Related Actions - Take Action - Rejection
+!|script                                                                                                      		|
+|MRA take action approval/delete/withdraw|Update Rejection|remarks|This is an automation testing for Rejection Workflow|
+|MRA File upload						 |																			|
+|click on button               			 |Submit                                                                    |
+|click on button               			 |Yes                                                                       |
+|wait for                       		 |+5 seconds                                                                |
+|click on button               			 |Close                                                                     |
+***!
+
+!*** Go to Application History
+!|script                                                                                          |
+|click on link|Application History                                                                |
+|verify grid  ||column|User   |row|3|contains|${mraPoName}                                        |
+|verify grid  ||column|Action |row|3|contains|Rejected By Agency                                  |
+|verify grid  ||column|Remarks|row|3|contains|This is an automation testing for Rejection Workflow|
+***!

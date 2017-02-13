@@ -1,0 +1,12 @@
+|SuiteBgp.SuiteMra.TestRelatedActions_ApprovalWorkflow||16:54:25 Tue, Feb 07, 2017|
+|SuiteBgp.ScenarioLibrary||10:58:14 Tue, Feb 07, 2017|
+|SuiteBgp.SuiteMra.SuiteSetUp||10:44:38 Tue, Feb 07, 2017|
+|SuiteBgp.SuiteMra.TestRelatedActions_WithdrawWorkflow||17:30:15 Mon, Feb 06, 2017|
+|SuiteBgp.SuiteMra.TestRelatedActions_RejectionWorkflow||17:23:37 Mon, Feb 06, 2017|
+|SuiteBgp.SuiteMra||14:44:42 Mon, Feb 06, 2017|
+|SuiteBgp.SuiteMra.TestNewsForNewApplication||10:32:29 Mon, Feb 06, 2017|
+|SuiteBgp.SuiteWogPg.EvaluateApplication.RejectionError||11:25:30 Fri, Feb 03, 2017|
+|SuiteBgp.SuiteWogPg.EvaluateApplication.EvaluateAppTrue||11:25:21 Fri, Feb 03, 2017|
+|SuiteBgp.SuiteWogPg.EvaluateApplication.EvaluateAppFalse||11:20:02 Fri, Feb 03, 2017|
+|SuiteBgp.SuiteWog||10:58:01 Fri, Feb 03, 2017|
+|SuiteBgp.SuiteBIMWorkflow.SuiteSetUp||10:43:53 Fri, Feb 03, 2017|

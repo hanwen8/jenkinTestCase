@@ -1,0 +1,71 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                  |
+|login with role|bgp_admin|
+|click on menu  |Actions  |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                                                                         |
+|click on application filter|Business Grant Portal                                               |
+|verify action              |Assign or Un-Assign User Role|is present                            |
+|click on action            |Assign or Un-Assign User Role                                       |
+|verify field               |Search Role                  |is present                            |
+|populate field             |Search Role                  |with value|BGP CDG Grant Administrator|
+|click on button            |Cancel                                                              |
+***!
+
+!*** Un-Assign User from Paticular role
+!|script                                                                                            |
+|click on application filter|Business Grant Portal                                                  |
+|click on action            |Assign or Un-Assign User Role                                          |
+|populate field             |(or) Choose Role|with value|BGP CDG Grant Administrator                |
+|verify field               |Action          |is present                                            |
+|click on radio option      |Un-Assign Role                                                         |
+|verify field               |Search Users    |is present                                            |
+|populate field             |Search Users    |with value|CDG Grant Admin                            |
+|verify grid                |                |column    |Username|row|1|contains|cdgga@spring.gov.sg|
+|select grid                |                |row       |1                                          |
+|click on button            |Un-Assign                                                              |
+|click on button            |Yes                                                                    |
+|click on button            |Close                                                                  |
+***!
+
+!*** Assign User to Paticular Role
+!|script                                                                                            |
+|click on application filter|Business Grant Portal                                                  |
+|click on action            |Assign or Un-Assign User Role                                          |
+|populate field             |(or) Choose Role|with value|BGP CDG Grant Administrator                |
+|verify field               |Action          |is present                                            |
+|click on radio option      |Assign Role                                                            |
+|verify field               |Search Users    |is present                                            |
+|populate field             |Search Users    |with value|CDG Grant Admin                            |
+|verify grid                |                |column    |Username|row|1|contains|cdgga@spring.gov.sg|
+|select grid                |                |row       |1                                          |
+|click on button            |Assign                                                                 |
+|click on button            |Yes                                                                    |
+|click on button            |Close                                                                  |
+***!
+
+!*** Date Validations
+!|script                                                                                                                           |
+|click on application filter|Business Grant Portal                                                                                 |
+|verify action              |Assign or Un-Assign User Role|is present                                                              |
+|click on action            |Assign or Un-Assign User Role                                                                         |
+|verify field               |Search Role                  |is present                                                              |
+|populate field             |Search Role                  |with value                 |BGP CDG Grant Administrator                 |
+|verify field               |Action                       |is present                                                              |
+|click on radio option      |Assign Role                                                                                           |
+|verify field               |Search Users                 |is present                                                              |
+|populate field             |Search Users                 |with value                 |CDG Grant Admin                             |
+|populate field             |Search Users                 |with value                 |CDG Grant Admin                             |
+|verify field               |Search Users                 |contains validation message|Please do not enter duplicate usernames     |
+|verify grid                |                             |column                     |Username |row|1|contains|cdgga@spring.gov.sg|
+|select grid                |                             |row                        |1                                           |
+|verify field               |                             |contains validation message|One or more user already has the access role|
+|click on button            |Cancel                                                                                                |
+***!
+
+!*** Tear Down
+|script   |
+|logout   |
+***!

@@ -1,0 +1,13 @@
+!*** Initialization
+!|script               |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
+|setup with browser    |CHROME                                              |
+|set appian url to     |http://appian-dev.gds-gov.tech/suite/tempo      		|
+|set appian version to |16.3                                                |
+|set appian locale to  |en_US                                               |
+|set stop on error to  |true                                                |
+***!
+
+!*** Login to Tempo
+!|script                   |
+|login with role|bgp_bim_po|
+***!

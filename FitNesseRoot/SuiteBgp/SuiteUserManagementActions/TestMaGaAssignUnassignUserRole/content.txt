@@ -1,0 +1,30 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                  |
+|login with role|bgp_ma_ga|
+|click on menu  |Actions  |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                               |
+|verify Assign or Un-Assign User Role action is present|
+***!
+
+!*** Un-Assign PO from MA PO Role
+!|script                                                                                           |
+|Un-Assign PO|mapo@mda.gov.sg|named|MA Processing Officer|from role|BGP MA Grant Processing Officer|
+***!
+
+!*** Assign PO to MA PO Role
+!|script                                                                                        |
+|Assign PO|mapo@mda.gov.sg|named|MA Processing Officer|with role|BGP MA Grant Processing Officer|
+***!
+
+!*** Date Validations for Assign or Un-Assign MA PO Role
+!|script                                                                                                      |
+|Date Validations for PO|mapo@mda.gov.sg|named|MA Processing Officer|with role|BGP MA Grant Processing Officer|
+***!
+
+!*** Tear Down
+|script|
+|logout|
+***!

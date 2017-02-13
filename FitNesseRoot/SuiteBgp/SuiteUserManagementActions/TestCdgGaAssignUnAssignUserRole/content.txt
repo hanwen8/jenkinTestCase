@@ -1,0 +1,30 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                   |
+|login with role|bgp_cdg_ga|
+|click on menu  |Actions   |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                               |
+|verify Assign or Un-Assign User Role action is present|
+***!
+
+!*** Un-Assign PO from CDG PO Role
+!|script                                                                                |
+|Un-Assign PO|ramkyp|named|Ramakrishna Paturu|from role|BGP CDG Grant Processing Officer|
+***!
+
+!*** Assign PO to CDG PO Role
+!|script                                                                             |
+|Assign PO|ramkyp|named|Ramakrishna Paturu|with role|BGP CDG Grant Processing Officer|
+***!
+
+!*** Date Validations for Assign or Un-Assign CDG PO Role
+!|script                                                                                           |
+|Date Validations for PO|ramkyp|named|Ramakrishna Paturu|with role|BGP CDG Grant Processing Officer|
+***!
+
+!*** Tear Down
+|script|
+|logout|
+***!

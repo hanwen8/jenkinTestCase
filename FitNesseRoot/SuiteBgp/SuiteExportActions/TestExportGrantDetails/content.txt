@@ -1,0 +1,61 @@
+!*** Login to Tempo and go to Actions
+!|script              |
+|click on menu|Actions|
+***!
+
+!*** Verify whether the action presents or not
+!|script                                                                                                             |
+|click on application filter|Business Grant Portal                                                                   |
+|verify action              |Export Application Data             |is present                                         |
+|click on action            |Export Application Data                                                                 |
+|verify field               |Agency                              |is present                                         |
+|populate field             |Agency                              |with value|Media Development Authority of Singapore|
+|verify field               |Specific Area                       |is present                                         |
+|populate field             |Specific Area                       |with value|Events Participation                    |
+|click on button            |Generate Data                                                                           |
+|verify link                |Click to export the Application Data|is present                                         |
+|click on link              |Click to export the Application Data                                                    |
+|click on button            |Close                                                                                   |
+***!
+
+!*** Check for mandatory fields and validation messages
+!|script                                                                                                      |
+|click on application filter|Business Grant Portal                                                            |
+|verify action              |Export Application Data|is present                                               |
+|click on action            |Export Application Data                                                          |
+|verify field               |Agency                 |is present                                               |
+|verify field               |Specific Area          |is present                                               |
+|click on button            |Generate Data                                                                    |
+|verify field               |Agency                 |contains validation message|Agency cannot be blank       |
+|verify field               |Specific Area          |contains validation message|Specific Area cannot be blank|
+|click on button            |Close                                                                            |
+***!
+
+!*** Skip Validation for Close Button
+!|script                                                       |
+|click on application filter|Business Grant Portal             |
+|verify action              |Export Application Data|is present|
+|click on action            |Export Application Data           |
+|verify field               |Agency                 |is present|
+|verify field               |Specific Area          |is present|
+|click on button            |Close                             |
+***!
+
+!*** Date Validations
+!|script                                                                                                                 |
+|click on application filter|Business Grant Portal                                                                       |
+|verify action              |Export Application Data|is present                                                          |
+|click on action            |Export Application Data                                                                     |
+|verify field               |Agency                 |is present                                                          |
+|populate field             |Agency                 |with value                 |Media Development Authority of Singapore|
+|verify field               |Specific Area          |is present                                                          |
+|populate field             |Specific Area          |with value                 |Events Participation                    |
+|verify field               |Submission Date From   |is present                                                          |
+|populate field             |Submission Date From   |with value                 |2017-10-10                              |
+|verify field               |Submission Date From   |contains validation message|Date cannot be greater than today.      |
+|verify field               |To                     |is present                                                          |
+|populate field             |To                     |with value                 |2017-10-11                              |
+|verify field               |To                     |contains validation message|Date cannot be greater than today.      |
+|click on button            |Close                                                                                       |
+***!
+

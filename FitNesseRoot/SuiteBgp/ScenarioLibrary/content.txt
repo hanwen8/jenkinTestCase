@@ -1,4 +1,200 @@
-!*** Scenario - Setup using default values 
-!|scenario                             |setup for test script                             |
-|setup for test script for browser|${defaultBrowser}|locale|${defaultLocale}|version|${defaultVersion}|url|${defaultURL}|
+!3 Workflows for Related Actions
+
+!**> Update Approval
+
+***!
+
+!**> Update Rejection
+
+***!
+
+!**> Withdraw
+
+***!
+
+!*** Re-route
+
+!**> Remarks cannot be left blank or more than 4000 characters and dropdown selections cannot be empty
+|scenario                      |re-route with invalid remarks and dropdown selections for|recordType                 |application|appId|with company name|companyName|and UEN|companyUen|
+|click on menu                 |Records                                                                                                                                                 |
+|click on record type          |@recordType                                                                                                                                             |
+|search for                    |@appId                                                                                                                                                  |
+|verify record                 |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen     |is present                                                                                    |
+|click on record               |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen                                                                                                    |
+|click on link                 |Related Actions                                                                                                                                         |
+|click on record related action|Take Action                                                                                                                                             |
+|check                         |get form title                                           |Take Action on Application ID #@appId                                                         |
+|check                         |get form instructions                                    |Allows the Grant Admin / Processing Officer to take an action on this grant                   |
+|populate field                |Choose an Action                                         |with                       |Re-route                                                          |
+|check                         |get form title                                           |Take Action on Application ID #@appId !-|-! Re-route                                          |
+|verify field                  |Grant Type[1]                                            |is present                                                                                    |
+|verify field                  |Business Industry[1]                                     |is present                                                                                    |
+|verify field                  |Functional Area[1]                                       |is present                                                                                    |
+|verify field                  |Specific Area[1]                                         |is present                                                                                    |
+|check                         |get field                                                |Grant Type[2]              |value      |!--- Please Select---!                                |
+|check                         |get field                                                |Business Industry[2]       |value      |!--- Please Select---!                                |
+|check                         |get field                                                |Functional Area[2]         |value      |!--- Please Select---!                                |
+|check                         |get field                                                |Specific Area[2]           |value      |!--- Please Select---!                                |
+|click on button               |Submit                                                                                                                                                  |
+|click on button               |Yes                                                                                                                                                     |
+|verify field                  |Remarks                                                  |contains validation message|Remarks cannot be left blank                                      |
+|verify field                  |Grant Type                                               |contains validation message|A value is required                                               |
+|verify field                  |Business Industry                                        |contains validation message|A value is required                                               |
+|verify field                  |Functional Area                                          |contains validation message|A value is required                                               |
+|verify field                  |Specific Area                                            |contains validation message|A value is required                                               |
+|populate field                |Remarks                                                  |with   value               |${4001_characters}                                                |
+|click on button               |Submit                                                                                                                                                  |
+|click on button               |Yes                                                                                                                                                     |
+|verify field                  |Remarks                                                  |contains validation message|You have exceeded the number of characters (4000)                 |
+|click on button               |Cancel                                                                                                                                                  |
+|click on button               |Yes                                                                                                                                                     |
+***!
+
+!**> Re-route with valid remarks field and dropdown selections
+|scenario                      |re-route for                                        |recordType          |application|appId|with company name|companyName|and UEN|companyUen|
+|click on menu                 |Records                                                                                                                                     |
+|click on record type          |@recordType                                                                                                                                 |
+|search for                    |@appId                                                                                                                                      |
+|verify record                 |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen|is present                                                                             |
+|click on record               |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen                                                                                        |
+|click on link                 |Related Actions                                                                                                                             |
+|click on record related action|Take Action                                                                                                                                 |
+|check                         |get form title                                      |Take Action on Application ID #@appId                                                  |
+|check                         |get form instructions                               |Allows the Grant Admin / Processing Officer to take an action on this grant            |
+|populate field                |Choose an Action                                    |with                |Re-route                                                          |
+|check                         |get form title                                      |Take Action on Application ID #@appId !-|-! Re-route                                   |
+|verify field                  |Grant Type[1]                                       |is present                                                                             |
+|verify field                  |Business Industry[1]                                |is present                                                                             |
+|verify field                  |Functional Area[1]                                  |is present                                                                             |
+|verify field                  |Specific Area[1]                                    |is present                                                                             |
+|check                         |get field                                           |Grant Type[2]       |value      |!--- Please Select---!                                |
+|check                         |get field                                           |Business Industry[2]|value      |!--- Please Select---!                                |
+|check                         |get field                                           |Functional Area[2]  |value      |!--- Please Select---!                                |
+|check                         |get field                                           |Specific Area[2]    |value      |!--- Please Select---!                                |
+|populate field                |Remarks                                             |with value          |This is an automation testing for re-route workflow               |
+|populate field                |Grant Type[2]                                       |with value          |Capability Development                                            |
+|populate field                |Business Industry[2]                                |with value          |Building & Construction                                           |
+|populate field                |Functional Area[2]                                  |with value          |IT Software                                                       |
+|populate field                |Specific Area[2]                                    |with value          |Building Information Model (BIM)                                  |
+|click on button               |Submit                                                                                                                                      |
+|click on button               |Yes                                                                                                                                         |
+|check                         |get form title                                      |Confirmation of Re-route for Application ID #@appId                                    |
+|click on button               |Close                                                                                                                                       |
+***!
+
+!**> Successful re-route appears in Application History
+|scenario     |check successful re-route in Application History                                           |
+|click on link|Application History                                                                        |
+|sort grid    ||by column|Action Taken On                                                                 |
+|verify grid  ||column   |User           |row|[3]|contains|Site Admin                                     |
+|verify grid  ||column   |Action         |row|[3]|contains|Re-route                                       |
+|verify grid  ||column   |Action Taken On|row|[3]|contains|!today (dd MMM yyyy)                           |
+|verify grid  ||column   |Remarks        |row|[3]|contains|Application has been rerouted to another grant.|
+|verify grid  ||column   |Remarks        |row|[3]|contains|Grant Type: Capability Development             |
+|verify grid  ||column   |Remarks        |row|[3]|contains|Business Industry: Building & Construction     |
+|verify grid  ||column   |Remarks        |row|[3]|contains|Functional Area: IT Software                   |
+|verify grid  ||column   |Remarks        |row|[3]|contains|Specific Area: Building Information Model (BIM)|
+***!
+
+!**> Successful re-route appears in News feed
+|scenario                        |check successful re-route for application                       |appId                                                  |in News feed                                                                                                                                |
+|click on menu                   |News                                                                                                                                                                                                                                                                 |
+|click on link                   |Updates                                                                                                                                                                                                                                                              |
+|$submissionTime=                |get regex                                                       |[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M|group                                                     |0|from news feed containing text|New Application ID #@appId has been submitted on|
+|verify news feed containing text|New Application ID #@appId has been submitted on $submissionTime|commented with                                         |[Rerouted] Application has been rerouted to another grant.|is present                                                                       |
+***!
+
+***!
+
+!*** Return For Edit
+
+!**> Remarks cannot be left blank or more than 4000 characters
+|scenario                      |return for edit with invalid remarks for            |recordType                 |application|appId|with company name|companyName|and UEN|companyUen|
+|click on menu                 |Records                                                                                                                                            |
+|click on record type          |@recordType                                                                                                                                        |
+|search for                    |@appId                                                                                                                                             |
+|verify record                 |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen|is present                                                                                    |
+|click on record               |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen                                                                                               |
+|click on link                 |Related Actions                                                                                                                                    |
+|click on record related action|Take Action                                                                                                                                        |
+|check                         |get form title                                      |Take Action on Application ID #@appId                                                         |
+|check                         |get form instructions                               |Allows the Grant Admin / Processing Officer to take an action on this grant                   |
+|populate field                |Choose an Action                                    |with                       |Return For Edit                                                   |
+|check                         |get form title                                      |Take Action on Application ID #@appId !-|-! Return For Edit                                   |
+|click on button               |Submit                                                                                                                                             |
+|click on button               |Yes                                                                                                                                                |
+|verify field                  |Remarks                                             |contains validation message|Remarks cannot be left blank                                      |
+|populate field                |Remarks                                             |with   value               |${4001_characters}                                                |
+|click on button               |Submit                                                                                                                                             |
+|click on button               |Yes                                                                                                                                                |
+|verify field                  |Remarks                                             |contains validation message|You have exceeded the number of characters (4000)                 |
+|click on button               |Cancel                                                                                                                                             |
+|click on button               |Yes                                                                                                                                                |
+***!
+
+!**> Return For Edit with valid remarks field
+|scenario                      |return for edit for                                 |recordType  |application|appId|with company name|companyName|and UEN|companyUen|
+|click on menu                 |Records                                                                                                                             |
+|click on record type          |@recordType                                                                                                                         |
+|search for                    |@appId                                                                                                                              |
+|verify record                 |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen|is present                                                                     |
+|click on record               |ID: @appId !-|-! @companyName !-|-! UEN: @companyUen                                                                                |
+|click on link                 |Related Actions                                                                                                                     |
+|click on record related action|Take Action                                                                                                                         |
+|check                         |get form title                                      |Take Action on Application ID #@appId                                          |
+|check                         |get form instructions                               |Allows the Grant Admin / Processing Officer to take an action on this grant    |
+|populate field                |Choose an Action                                    |with        |Return For Edit                                                   |
+|check                         |get form title                                      |Take Action on Application ID #@appId !-|-! Return For Edit                    |
+|populate field                |Remarks                                             |with   value|This is an automation testing for Return for Edit workflow        |
+|click on button               |Submit                                                                                                                              |
+|click on button               |Yes                                                                                                                                 |
+|check                         |get form title                                      |Confirmation of Return for Edit for Application ID #@appId                     |
+|click on button               |Close                                                                                                                               |
+***!
+
+!**> Successful Return For Edit appears in Application History
+|scenario     |check successful Return For Edit in Application History                                               |
+|click on link|Application History                                                                                   |
+|sort grid    ||by column|Action Taken On                                                                            |
+|verify grid  ||column   |Action         |row|[3]|contains|Return For Edit                                           |
+|verify grid  ||column   |Action Taken On|row|[3]|contains|!today (dd MMM yyyy)                                      |
+|verify grid  ||column   |Remarks        |row|[3]|contains|This is an automation testing for Return for Edit workflow|
+***!
+
+!**> Successful Return For Edit appears in News feed
+|scenario                        |check successful Return For Edit for application                |appId                                                  |in News feed                                                                                                                                                  |
+|click on menu                   |News                                                                                                                                                                                                                                                                                   |
+|click on link                   |Updates                                            6                                                                                                                                                                                                                                    |
+|$submissionTime=                |get regex                                                       |[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M|group                                                                       |0|from news feed containing text|New Application ID #@appId has been submitted on|
+|verify news feed containing text|New Application ID #@appId has been submitted on $submissionTime|commented with                                         |[Pending Re-submission] The application has been returned for edit by agency|is present                                                                       |
+***!
+
+!**> Navigating to Evaluating Application
+|scenario							| navigate to evalaute application		|
+|click on menu						| Records 								|
+|click on record type 				| Whole of Government - Applications	|
+|click on record type user filter	| Me 									|
+|click on grid						| [1] 									| column 			| [1] 		| row 		| [1] 		|
+|verify record related action 		| Evaluate Application 					| is present 		|
+|click on record related action 	| Evaluate Application 					|
+***!
+
+!*** MRA Approval/Delete Flow
+!**> Go to Related Actions - Take Action - Approval
+!|scenario                     |MRA take action approval/delete/withdraw| action| remarks| remarks|
+|click on menu                 |Records                                                                      |
+|click on record type          |Market Readiness Assistance                                                  |
+|click on record               |ID: ${mraAppId} !-|-! ${companyName} !-|-! UEN: ${companyUen}                |
+|click on link                 |Related Actions                                                              |
+|click on record related action|Take Action                                                                  |
+|populate field                |Choose an Action|with    |@action                                    		 |
+|populate field                |Remarks         |with    |@remarks											 |
+
+
+!**> File upload
+!|scenario					   |MRA File upload |
+|populate field                |Upload Files    |with    |${automated.testing.home}/documents/CMD.png        |
+|verify field                  |Upload Files    |contains|${automated.testing.home}/documents/CMD.png        |
+***!
+
 ***!

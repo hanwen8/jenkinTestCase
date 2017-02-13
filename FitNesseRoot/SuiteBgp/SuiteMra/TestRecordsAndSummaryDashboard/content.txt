@@ -1,0 +1,53 @@
+!*** Go to Records
+!|script                                                                                                    |
+|click on menu                 |Records                                                                     |
+|click on record type          |Market Readiness Assistance                                                 |
+|verify record type user filter|Me                    |is present                                           |
+|verify record type user filter|Anyone In Organization|is present                                           |
+|verify record type user filter|Unassigned            |is present                                           |
+|verify record type user filter|New                   |is present                                           |
+|verify record type user filter|Rerouted              |is present                                           |
+|verify record type user filter|Submitted             |is present                                           |
+|verify record type user filter|Processing            |is present                                           |
+|verify record type user filter|Pending Re-submission |is present                                           |
+|verify record type user filter|1 Month               |is present                                           |
+|verify record type user filter|3 Months              |is present                                           |
+|verify record type user filter|6 Months              |is present                                           |
+|search for                    |${mraAppId}                                                                 |
+|verify record                 |ID: ${mraAppId} !-    |-! ${companyName} !-|-! UEN: ${companyUen}|is present|
+***!
+
+!*** Go to Record Summary Dashboard
+!|script                                                                                  |
+|click on record|ID: ${mraAppId} !-|-! ${companyName} !-|-! UEN: ${companyUen}            |
+|verify link    |Download as PDF   |is present                                            |
+|verify link    |Download as PDF   |URL contains        |suite/plugins/servlet/downloadpdf|
+***!
+
+!*** Go to Record Summary Dashboard - Eligibility
+!|script                                                                                                                                       |
+|verify button  |Eligibility                                                                                                    |is present    |
+|click on button|Eligibility                                                                                                                   |
+|verify field   |Is the applicant registered in Singapore?                                                                      |is present    |
+|verify field   |Is the applicant's latest annual turnover less than or equal to SGD 100M (based on most recent audited report)?|is present    |
+|verify field   |Is the applicant’s global headquarters  anchored in Singapore?                                                 |is present    |
+|verify field   |Are the following statements true for this project?                                                            |is present    |
+|click on button|Project Information                                                                                                           |
+|verify field   |Project Duration                                                                                               |contains|month|
+***!
+
+!*** Go to Related Actions
+!|script                                                             |
+|click on link               |Related Actions                        |
+|verify record related action|Reassign Ownership      |is not present|
+|verify record related action|Take Action             |is not present|
+|verify record related action|Generate Letter of Offer|is not present|
+***!
+
+!*** Go to Application History
+!|script                                                                |
+|click on link|Application History                                      |
+|verify grid  ||column|User   |row|1|contains|S1234567D                 |
+|verify grid  ||column|Action |row|1|contains|New                       |
+|verify grid  ||column|Remarks|row|1|contains|Received grant application|
+***!

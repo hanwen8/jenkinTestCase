@@ -1,0 +1,15 @@
+!*** Initialization
+!|script               |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
+|setup with browser    |CHROME                                              |
+|set appian url to     |http://appian-dev.ida-gds-demo.com/suite/tempo      |
+|set appian version to |7.11                                                |
+|set appian locale to  |en_US                                               |
+|set stop on error to  |true                                                |
+|set timeout seconds to|20                                                  |
+|set start datetime                                                         |
+***!
+
+!*** Login information
+!|script                  |
+|login with role|bgp_admin|
+***!

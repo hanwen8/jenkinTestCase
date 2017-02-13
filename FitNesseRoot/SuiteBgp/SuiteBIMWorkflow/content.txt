@@ -1,0 +1,16 @@
+!*** FitNesse Configurations
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+***!
+
+!*** Set up variables
+!define bimAppId {1608Q8AZ}
+!define bimAppId_RFE {1608L59U}
+!define bimPoName {Karthik Natarajan}
+!define bimPoUsername {karthikn}
+!define companyName {Generic Trading Company Pte Ltd}
+!define companyUen {T12LL1368D}
+***!
+
+!contents -R2 -g -p -f -h

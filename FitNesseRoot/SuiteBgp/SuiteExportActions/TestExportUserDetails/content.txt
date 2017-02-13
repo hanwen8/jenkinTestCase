@@ -1,0 +1,35 @@
+!*** Login to Tempo and go to Actions
+!|script              |
+|click on menu|Actions|
+***!
+
+!*** Verify whether the action presents or not
+!|script                                                                                |
+|click on application filter|Business Grant Portal                                      |
+|verify action              |[Admin] Search & Export User Details|is present            |
+|click on action            |[Admin] Search & Export User Details                       |
+|click on radio option      |All Users                                                  |
+|click on button            |Export to Excel                                            |
+|click on button            |Yes                                                        |
+|verify link                |BGP All Users                       |is present            |
+|click on link              |BGP All Users                                              |
+|click on button            |Reset                                                      |
+|click on radio option      |Users[2]                                                   |
+|verify field               |Select the User(s)                  |is present            |
+|populate field             |Select the User(s)                  |with|chandhinir       |
+|click on button            |Filter                                                     |
+|click on radio option      |Roles                                                      |
+|verify field               |Roles                               |is present            |
+|populate field             |Roles                               |with|BGP Administrator|
+|click on button            |Filter                                                     |
+|click on button            |Close                                                      |
+|click on button            |Yes                                                        |
+***!
+
+!*** Skip Validation for Close Button
+!|script                                                                    |
+|click on application filter|Business Grant Portal                          |
+|verify action              |[Admin] Search & Export User Details|is present|
+|click on action            |[Admin] Search & Export User Details           |
+|click on button            |Close                                          |
+***!

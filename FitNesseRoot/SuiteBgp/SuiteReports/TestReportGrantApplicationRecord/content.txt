@@ -1,0 +1,61 @@
+!*** Login to Tempo and go to Reports
+!|script              |
+|click on menu|Reports|
+***!
+
+!*** Verify whether the report presents or not
+!|script                                                                                               |
+|verify report        |Grant Application Dashboard|is present                                          |
+|click on report      |Grant Application Dashboard                                                     |
+|verify field         |Year                       |is present                                          |
+|populate field       |Year                       |with value|2016                                     |
+|verify field         |Choose Grants              |is present                                          |
+|populate field       |Choose Grants              |with value|ICT for Productivity and Growth (IDA IPG)|
+|click on radio option|Month                                                                           |
+|verify field         |Selected Grant(s)          |is present                                          |
+|clear field          |Choose Grants                                                                   |
+|populate field       |Year                       |with value|2014                                     |
+|populate field       |Choose Grants              |with value|Workforce Training and Upgrading (WTU)   |
+***!
+
+!*** Validation check
+!|script                                                                                            |
+|verify field         |Year         |is present                                                     |
+|populate field       |Year         |with value|2016                                                |
+|verify field         |Choose Grants|is present                                                     |
+|populate field       |Choose Grants|with value|Training Industry Professionals in Tourism (TIP-IT2)|
+|click on radio option|Month                                                                        |
+|click on button      |<<                                                                           |
+***!
+
+!*** Rest Button functionality
+!|script                 |
+|click on button|>>      |
+|click on button|Reset[1]|
+***!
+
+!*** Update Year and verify the data change
+!|script                                                                          |
+|verify field  |Year         |is present                                          |
+|populate field|Year         |with value|2015                                     |
+|populate field|Choose Grants|with value|Workforce Training and Upgrading (WTU)   |
+|verify field  |Choose Grants|is present                                          |
+|populate field|Choose Grants|with value|ICT for Productivity and Growth (IDA IPG)|
+|verify field  |Year         |is present                                          |
+|populate field|Year         |with value|2016                                     |
+***!
+
+!*** Rest Button functionality
+!|script                 |
+|click on button|>>      |
+|click on button|Reset[1]|
+***!
+
+
+!*** Verify Reports
+!|script                                 |
+|verify field         |Show As|is present|
+|click on radio option|Bar Chart[1]      |
+|click on radio option|Pie Chart         |
+***!
+

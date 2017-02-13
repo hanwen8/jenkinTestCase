@@ -1,0 +1,24 @@
+!*** Go to Related Actions - Take Action - Re-route
+
+!*** Remarks cannot be left blank or more than 4000 characters and dropdown selections cannot be empty
+!|script                                                                                                                                                             |
+|re-route with invalid remarks and dropdown selections for|Market Readiness Assistance|application|${mraAppId}|with company name|${companyName}|and UEN|${companyUen}|
+***!
+
+!*** re-route with valid remarks field and dropdown selections
+!|script                                                                                                                |
+|re-route for|Market Readiness Assistance|application|${mraAppId}|with company name|${companyName}|and UEN|${companyUen}|
+***!
+
+!*** Successful re-route appears in Application History
+!|script                                         |
+|wait for               |+5 seconds              |
+|check successful re-route in Application History|
+***!
+
+!*** Successful re-route appears in News feed
+!|script                                                           |
+|check successful re-route for application|${mraAppId}|in News feed|
+***!
+
+***!

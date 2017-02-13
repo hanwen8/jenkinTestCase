@@ -1,0 +1,24 @@
+!*** Go to Related Actions - Take Action - Return for Edit
+
+!*** Remarks cannot be left blank or more than 4000 characters
+!|script                                                                                                                                            |
+|return for edit with invalid remarks for|Market Readiness Assistance|application|${mraAppId}|with company name|${companyName}|and UEN|${companyUen}|
+***!
+
+!*** Return For Edit with valid remarks field
+!|script                                                                                                                       |
+|return for edit for|Market Readiness Assistance|application|${mraAppId}|with company name|${companyName}|and UEN|${companyUen}|
+***!
+
+!*** Successful Return For Edit appears in Application History
+!|script                                                |
+|wait for                  |+5 seconds                  |
+|check successful Return For Edit in Application History|
+***!
+
+!*** Successful Return For Edit appears in News feed
+!|script                                                                  |
+|check successful Return For Edit for application|${mraAppId}|in News feed|
+***!
+
+***!

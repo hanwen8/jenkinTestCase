@@ -1,0 +1,30 @@
+!*** Logon To Tempo and Navigate to Actions
+!|script                   |
+|login with role|bgp_aip_ga|
+|click on menu  |Actions   |
+***!
+
+!*** Verify whether the action is present or not
+!|script                                               |
+|verify Assign or Un-Assign User Role action is present|
+***!
+
+!*** Un-Assign PO from AIP PO Role
+!|script                                                                                 |
+|Un-Assign PO|aippo@spring.gov.sg|named|AIP Po|from role|BGP AIP Grant Processing Officer|
+***!
+
+!*** Assign PO to AIP PO Role
+!|script                                                                              |
+|Assign PO|aippo@spring.gov.sg|named|AIP Po|with role|BGP AIP Grant Processing Officer|
+***!
+
+!*** Date Validations for Assign or Un-Assign AIP PO Role
+!|script                                                                                            |
+|Date Validations for PO|aippo@spring.gov.sg|named|AIP Po|with role|BGP AIP Grant Processing Officer|
+***!
+
+!*** Tear Down
+|script|
+|logout|
+***!

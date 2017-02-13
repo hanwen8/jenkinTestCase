@@ -1,0 +1,32 @@
+!*** Go to Related Actions
+!|script                                                              |
+|click on menu                 |Records                               |
+|click on record type          |Building Information Model            |
+|click on record               |ID: ${bimAppId}                       |
+|click on link                 |Related Actions                       |
+|verify record related action  |Reassign Ownership|is present         |
+|verify record related action  |Take Action       |is present         |
+|click on record related action|Take Action                           |
+|populate field                |Choose an Action  |Withdraw           |
+|populate field                |Remarks           |Withdrawn by Agency|
+|click on button               |Submit                                |
+|click on button               |Yes                                   |
+|click on button               |Close                                 |
+***!
+
+!*** Go to Application History
+!|script                                                         |
+|wait for     |+10 seconds                                       |
+|click on link|Application History                               |
+|verify grid  ||column|User   |row|1|contains|${bimPoName}       |
+|verify grid  ||column|Action |row|1|contains|Withdrawn By Agency|
+|verify grid  ||column|Remarks|row|1|contains|Withdrawn by Agency|
+***!
+
+!*** Go to News
+!|script                                                                                                                                                                                                                                                                                                                 |
+|click on menu                   |News                                                                                                                                                                                                                                                                                   |
+|click on link                   |Updates                                                                                                                                                                                                                                                                                |
+|$submissionTime=                |get regex                                                            |[0-9]{2} [A-Z][a-z]{2} [0-9]{4} [0-9]{2}:[0-9]{2} [AP]M|group                                                             |0|from news feed containing text|New Application ID #${bimAppId} has been submitted on|
+|verify news feed containing text|New Application ID #${bimAppId} has been submitted on $submissionTime|commented with                                         |[Withdrawn By Agency] The application has been withdrawn by agency|is present                                                                            |
+***!

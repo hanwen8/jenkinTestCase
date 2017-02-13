@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <properties>
-<Edit/>
-<Files/>
-<Help>Reusable scenarios for setting up test cases</Help>
-<Properties/>
-<RecentChanges/>
-<Refactor/>
-<Search/>
-<Versions/>
-<WhereUsed/>
+<Edit>true</Edit>
+<Files>true</Files>
+<Help>Scenario Library for BGP Application Suite</Help>
+<Properties>true</Properties>
+<RecentChanges>true</RecentChanges>
+<Refactor>true</Refactor>
+<Search>true</Search>
+<Suites>bgp</Suites>
+<Versions>true</Versions>
+<WhereUsed>true</WhereUsed>
 </properties>
