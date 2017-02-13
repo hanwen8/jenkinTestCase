@@ -182,7 +182,7 @@
 !*** MRA Approval/Delete Flow
 !**> Go to Related Actions - Take Action - Approval
 !|scenario                     |MRA take action approval/delete/withdraw| action| remarks| remarks|
-|click on menu                 |Records                                                                      |
+|click on menu                 |Reports                                                                      |
 |click on record type          |Market Readiness Assistance                                                  |
 |click on record               |ID: ${mraAppId} !-|-! ${companyName} !-|-! UEN: ${companyUen}                |
 |click on link                 |Related Actions                                                              |
