@@ -8,7 +8,7 @@
 !*** MRA Test Suite Configurations
 !define companyName {Generic Trading Company Pte Ltd}
 !define companyUen {201005853W}
-!define mraAppId {1702RWSF}
+!define mraAppId {17022YYD}
 !define mraPoName {mra po5}
 ***!
 
